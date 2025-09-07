@@ -8,16 +8,17 @@ import matplotlib.pyplot as plt
 # Enter your manual coordinates here as a list of tuples
 manual_corners = [(391, 427), (1563, 427), (1563, 1586), (391, 1586)]
 
-# Read coordinates
+# Read coordinates from CSV (similar to MNIST_Mask_Measure.py)
 csv_path = "/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Processed DaVis Data/000_Images/000_Images0001.csv"
-df = pd.read_csv(csv_path, delimiter=';').values
-xs = df[0]
-ys = df[1]
+M_data = pd.read_csv(csv_path, delimiter=';').values
+x, y = M_data[:, 0], M_data[:, 1]
+
+# Create corners from the bounding box of all CSV points
 csv_corners = [
-    (xs.min(), ys.min()),
-    (xs.max(), ys.min()),
-    (xs.max(), ys.max()),
-    (xs.min(), ys.max())
+    (np.min(x), np.min(y)),
+    (np.max(x), np.min(y)),
+    (np.max(x), np.max(y)),
+    (np.min(x), np.max(y))
 ]
 
 # Build boundaries for both sets
