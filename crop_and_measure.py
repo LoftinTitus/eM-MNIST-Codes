@@ -129,7 +129,13 @@ class CropWindow(QMainWindow):
 
     def save_crop(self):
         if hasattr(self, 'cropped_img'):
-            fname, _ = QFileDialog.getSaveFileName(self, 'Save Cropped Image', '', 'Image files (*.jpg *.png *.bmp)')
+            # Use the native macOS Finder dialog for saving files
+            fname, _ = QFileDialog.getSaveFileName(
+                self,
+                'Save Cropped Image',
+                '',
+                'Image files (*.jpg *.png *.bmp)'
+            )
             if fname:
                 cv2.imwrite(fname, self.cropped_img)
                 print('Cropped image saved:', fname)
