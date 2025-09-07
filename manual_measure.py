@@ -4,9 +4,8 @@ import math
 # Enter your manual coordinates here as a list of tuples
 manual_corners = [(391, 427), (1563, 427), (1563, 1586), (391, 1586)]
 
-# Read coordinates from CSV using pandas
-csv_file = 'coordinates.csv'
-df = pd.read_csv(csv_file, header=None)
+# Read coordinates
+df = pd.read_csv("/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Processed DaVis Data/020_Images/020_Images0001.csv", delimiter=';').values
 xs = df[0]
 ys = df[1]
 csv_corners = [
