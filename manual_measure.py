@@ -6,12 +6,15 @@ import cv2
 import matplotlib.pyplot as plt
 
 # Enter your manual coordinates here as a list of tuples
-manual_corners = [(391, 427), (1563, 427), (1563, 1586), (391, 1586)]
-
+manual_corners =      [(337, 386), (1463, 386), (1463, 1509), (337, 1509)]
 # Read coordinates from CSV (similar to MNIST_Mask_Measure.py)
-csv_path = "/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Processed DaVis Data/000_Images/000_Images0001.csv"
+csv_path = "/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Processed DaVis Data/006_Images/006_Images0001.csv"
 M_data = pd.read_csv(csv_path, delimiter=';').values
 x, y = M_data[:, 0], M_data[:, 1]
+
+# Flip y coordinates to match image origin (top-left) - assuming typical image height
+img_height = 1652  # Adjust this based on your actual image height
+y = img_height - y
 
 # Create corners from the bounding box of all CSV points
 csv_corners = [
