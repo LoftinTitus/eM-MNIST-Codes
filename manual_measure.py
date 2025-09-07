@@ -6,9 +6,9 @@ import cv2
 import matplotlib.pyplot as plt
 
 # Enter manual coordinates here as a list of tuples
-manual_corners =      [(337, 386), (1463, 386), (1463, 1509), (337, 1509)]
+manual_corners =        [(284, 391), (1407, 391), (1407, 1509), (284, 1509)]
 # Read coordinates from CSV (similar to MNIST_Mask_Measure.py)
-csv_path = "/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Processed DaVis Data/006_Images/006_Images0001.csv"
+csv_path = "/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Processed DaVis Data/007_Images/007_Images0001.csv"
 M_data = pd.read_csv(csv_path, delimiter=';').values
 x, y = M_data[:, 0], M_data[:, 1]
 
@@ -58,10 +58,10 @@ print("Max Distance:", maxDist)
 print("Fit % (IoU):", iou)
 
 # Visual
-plt.figure(figsize=(8, 8))
-plt.plot(B_manual[:, 0], B_manual[:, 1], 'r-', label='Manual Border')
-plt.plot(B_csv[:, 0], B_csv[:, 1], 'g-', label='CSV Border')
-plt.title('Manual vs CSV Borders')
-plt.legend()
-plt.gca().invert_yaxis()
-plt.show()
+#plt.figure(figsize=(8, 8))
+#plt.plot(B_manual[:, 0], B_manual[:, 1], 'r-', label='Manual Border')
+#plt.plot(B_csv[:, 0], B_csv[:, 1], 'g-', label='CSV Border')
+#plt.title('Manual vs CSV Borders')
+#plt.legend()
+#plt.gca().invert_yaxis()
+#plt.show()
