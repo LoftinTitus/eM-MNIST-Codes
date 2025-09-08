@@ -5,10 +5,10 @@ from scipy.spatial.distance import cdist
 import cv2
 import matplotlib.pyplot as plt
 
-# Enter manual coordinates here as a list of tuples
-manual_corners =        [(284, 391), (1407, 391), (1407, 1509), (284, 1509)]
+# Enter manual coordinates here as a list
+manual_corners =    [(435, 320), (1638, 320), (1638, 1497), (435, 1497)]
 # Read coordinates from CSV (similar to MNIST_Mask_Measure.py)
-csv_path = "/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Processed DaVis Data/007_Images/007_Images0001.csv"
+csv_path = "/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Processed DaVis Data/90_50_HM/90_50_HM0001.csv"
 M_data = pd.read_csv(csv_path, delimiter=';').values
 x, y = M_data[:, 0], M_data[:, 1]
 
