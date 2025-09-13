@@ -1,0 +1,1074 @@
+﻿000
+Translation u1: Mean=-4.78%, Std=2.81%, %>20%=0.08%
+Uniaxial u1: -5.32%, Std dev: 13.60%, %>20%: 4.08%
+Shear u1: -5.15%, Std dev: 26.77%, %>20%: 5.96%
+Point Load u1: -46.27%, Std dev: 10.69%, %>20%: 99.10%
+Translation u2: 0.00%, Std dev: 0.06%, %>20%: 0.00%
+Uniaxial u2: -10.27%, Std dev: 32.67%, %>20%: 14.45%
+Shear u2: -4.89%, Std dev: 34.99%, %>20%: 4.90%
+Point load u2: -45.20%, Std dev: 10.75%, %>20%: 98.53%
+001
+Translation u1: Mean=-6.49%, Std=4.99%, %>20%=1.14%
+Uniaxial u1: -7.63%, Std dev: 14.59%, %>20%: 8.08%
+Shear u1: -8.65%, Std dev: 22.31%, %>20%: 8.57%
+Point Load u1: -52.69%, Std dev: 72.98%, %>20%: 99.27%
+Translation u2: 0.00%, Std dev: 0.07%, %>20%: 0.00%
+Uniaxial u2: -10.73%, Std dev: 27.98%, %>20%: 15.10%
+Shear u2: -8.59%, Std dev: 74.76%, %>20%: 5.39%
+Point load u2: -47.61%, Std dev: 105.28%, %>20%: 97.71%
+
+
+002
+Translation u1: Mean=-6.13%, Std=3.21%, %>20%=0.33%
+Uniaxial u1: -6.53%, Std dev: 11.88%, %>20%: 7.35%
+Shear u1: -6.94%, Std dev: 15.84%, %>20%: 6.94%
+Point Load u1: -52.88%, Std dev: 32.52%, %>20%: 94.04%
+Translation u2: -0.00%, Std dev: 0.07%, %>20%: 0.00%
+Uniaxial u2: -8.67%, Std dev: 47.64%, %>20%: 13.63%
+Shear u2: -4.85%, Std dev: 14.01%, %>20%: 4.41%
+Point load u2: -46.10%, Std dev: 32.76%, %>20%: 92.90%
+003
+Translation u1: Mean=-4.50%, Std=2.49%, %>20%=0.00%
+Uniaxial u1: -5.56%, Std dev: 10.54%, %>20%: 7.35%
+Shear u1: -4.43%, Std dev: 13.74%, %>20%: 3.76%
+Point Load u1: -41.64%, Std dev: 23.73%, %>20%: 92.41%
+Translation u2: 0.00%, Std dev: 0.07%, %>20%: 0.00%
+Uniaxial u2: -10.44%, Std dev: 16.72%, %>20%: 13.55%
+Shear u2: -4.27%, Std dev: 11.45%, %>20%: 4.08%
+Point load u2: -45.46%, Std dev: 60.40%, %>20%: 92.08%
+004
+Translation u1: Mean=-6.24%, Std=3.45%, %>20%=0.24%
+Uniaxial u1: -6.96%, Std dev: 11.12%, %>20%: 8.16%
+Shear u1: -6.25%, Std dev: 14.94%, %>20%: 6.78%
+Point Load u1: -51.12%, Std dev: 22.11%, %>20%: 99.51%
+Translation u2: -0.01%, Std dev: 0.06%, %>20%: 0.00%
+Uniaxial u2: -8.70%, Std dev: 13.88%, %>20%: 11.18%
+Shear u2: -4.71%, Std dev: 17.74%, %>20%: 2.78%
+Point load u2: -45.31%, Std dev: 73.30%, %>20%: 97.96%
+005
+Translation u1: Mean=-8.60%, Std=5.95%, %>20%=3.92%
+Uniaxial u1: -9.42%, Std dev: 16.96%, %>20%: 10.69%
+Shear u1: -8.96%, Std dev: 84.92%, %>20%: 10.12%
+Point Load u1: -56.39%, Std dev: 16.51%, %>20%: 88.41%
+Translation u2: -0.00%, Std dev: 0.08%, %>20%: 0.00%
+Uniaxial u2: -13.45%, Std dev: 23.24%, %>20%: 17.88%
+Shear u2: -7.30%, Std dev: 45.98%, %>20%: 8.57%
+Point load u2: -51.26%, Std dev: 17.86%, %>20%: 88.57%
+006
+Translation u1: Mean=-7.16%, Std=4.15%, %>20%=0.98%
+Uniaxial u1: -7.73%, Std dev: 11.32%, %>20%: 8.08%
+Shear u1: -7.45%, Std dev: 20.81%, %>20%: 6.61%
+Point Load u1: -50.94%, Std dev: 12.75%, %>20%: 88.00%
+Translation u2: -0.00%, Std dev: 0.07%, %>20%: 0.00%
+Uniaxial u2: -10.01%, Std dev: 17.22%, %>20%: 12.65%
+Shear u2: -6.15%, Std dev: 19.64%, %>20%: 6.20%
+Point load u2: -43.37%, Std dev: 13.84%, %>20%: 86.53%
+007
+Translation u1: Mean=-11.65%, Std=6.61%, %>20%=9.61%
+Uniaxial u1: -13.57%, Std dev: 18.15%, %>20%: 17.58%
+Shear u1: -12.85%, Std dev: 25.02%, %>20%: 16.62%
+Point Load u1: -52.44%, Std dev: 99.76%, %>20%: 92.73%
+Translation u2: 0.02%, Std dev: 0.08%, %>20%: 0.00%
+Uniaxial u2: -14.16%, Std dev: 29.03%, %>20%: 21.56%
+Shear u2: -6.10%, Std dev: 22.72%, %>20%: 7.01%
+Point load u2: -45.65%, Std dev: 22.50%, %>20%: 91.26%
+008
+Translation u1: Mean=-5.97%, Std=3.60%, %>20%=0.24%
+Uniaxial u1: -6.40%, Std dev: 9.83%, %>20%: 6.86%
+Shear u1: -7.22%, Std dev: 18.03%, %>20%: 6.78%
+Point Load u1: -51.16%, Std dev: 25.80%, %>20%: 87.92%
+Translation u2: -0.00%, Std dev: 0.06%, %>20%: 0.00%
+Uniaxial u2: -8.72%, Std dev: 12.18%, %>20%: 9.31%
+Shear u2: -6.10%, Std dev: 36.92%, %>20%: 4.65%
+Point load u2: -47.84%, Std dev: 78.95%, %>20%: 87.76%
+009
+Translation u1: Mean=-9.27%, Std=5.22%, %>20%=3.18%
+Uniaxial u1: -10.32%, Std dev: 14.57%, %>20%: 12.00%
+Shear u1: -10.91%, Std dev: 21.87%, %>20%: 10.61%
+Point Load u1: -58.77%, Std dev: 47.46%, %>20%: 88.24%
+Translation u2: -0.00%, Std dev: 0.08%, %>20%: 0.00%
+Uniaxial u2: -11.32%, Std dev: 15.19%, %>20%: 15.67%
+Shear u2: -7.25%, Std dev: 23.37%, %>20%: 7.76%
+Point load u2: -47.39%, Std dev: 23.38%, %>20%: 87.51%
+010
+Translation u1: Mean=-6.57%, Std=4.08%, %>20%=1.13%
+Uniaxial u1: -7.51%, Std dev: 13.70%, %>20%: 7.97%
+Shear u1: -7.68%, Std dev: 23.05%, %>20%: 6.67%
+Point Load u1: -53.59%, Std dev: 62.37%, %>20%: 93.51%
+Translation u2: -0.00%, Std dev: 0.06%, %>20%: 0.00%
+Uniaxial u2: -7.80%, Std dev: 17.62%, %>20%: 9.09%
+Shear u2: -4.54%, Std dev: 23.44%, %>20%: 4.24%
+Point load u2: -39.48%, Std dev: 34.42%, %>20%: 89.87%
+011
+Translation u1: Mean=-10.20%, Std=6.42%, %>20%=7.38%
+Uniaxial u1: -11.46%, Std dev: 17.50%, %>20%: 13.59%
+Shear u1: -12.33%, Std dev: 35.95%, %>20%: 14.17%
+Point Load u1: -53.47%, Std dev: 47.57%, %>20%: 87.58%
+Translation u2: 0.04%, Std dev: 0.09%, %>20%: 0.00%
+Uniaxial u2: -17.86%, Std dev: 26.73%, %>20%: 24.32%
+Shear u2: -8.28%, Std dev: 29.24%, %>20%: 9.57%
+Point load u2: -45.10%, Std dev: 35.19%, %>20%: 82.76%
+012
+Translation u1: Mean=-8.02%, Std=5.20%, %>20%=2.86%
+Uniaxial u1: -11.08%, Std dev: 15.93%, %>20%: 12.98%
+Shear u1: -7.45%, Std dev: 38.33%, %>20%: 9.55%
+Point Load u1: -44.15%, Std dev: 19.12%, %>20%: 88.16%
+Translation u2: 0.03%, Std dev: 0.09%, %>20%: 0.00%
+Uniaxial u2: -16.80%, Std dev: 23.33%, %>20%: 25.22%
+Shear u2: -7.06%, Std dev: 33.99%, %>20%: 6.29%
+Point load u2: -42.46%, Std dev: 31.99%, %>20%: 86.37%
+013
+Translation u1: Mean=-8.40%, Std=4.84%, %>20%=2.29%
+Uniaxial u1: -8.52%, Std dev: 11.90%, %>20%: 9.31%
+Shear u1: -8.54%, Std dev: 39.42%, %>20%: 9.63%
+Point Load u1: -56.94%, Std dev: 46.46%, %>20%: 90.94%
+Translation u2: -0.00%, Std dev: 0.07%, %>20%: 0.00%
+Uniaxial u2: -10.07%, Std dev: 14.53%, %>20%: 12.49%
+Shear u2: -5.44%, Std dev: 17.79%, %>20%: 5.88%
+Point load u2: -43.74%, Std dev: 13.11%, %>20%: 89.47%
+014
+Translation u1: Mean=-7.41%, Std=4.65%, %>20%=2.20%
+Uniaxial u1: -8.42%, Std dev: 12.96%, %>20%: 10.04%
+Shear u1: -9.54%, Std dev: 36.65%, %>20%: 9.47%
+Point Load u1: -52.17%, Std dev: 29.70%, %>20%: 93.14%
+Translation u2: 0.00%, Std dev: 0.08%, %>20%: 0.00%
+Uniaxial u2: -13.91%, Std dev: 19.03%, %>20%: 22.45%
+Shear u2: -7.65%, Std dev: 19.35%, %>20%: 9.71%
+Point load u2: -51.29%, Std dev: 30.27%, %>20%: 92.98%
+015
+Translation u1: Mean=-8.72%, Std=5.61%, %>20%=4.24%
+Uniaxial u1: -10.69%, Std dev: 17.01%, %>20%: 11.10%
+Shear u1: -7.80%, Std dev: 42.76%, %>20%: 9.63%
+Point Load u1: -48.40%, Std dev: 32.14%, %>20%: 89.80%
+Translation u2: 0.02%, Std dev: 0.09%, %>20%: 0.00%
+Uniaxial u2: -16.26%, Std dev: 19.79%, %>20%: 24.65%
+Shear u2: -8.10%, Std dev: 62.20%, %>20%: 7.43%
+Point load u2: -41.97%, Std dev: 19.70%, %>20%: 88.73%
+016
+Translation u1: Mean=-4.08%, Std=2.12%, %>20%=0.00%
+Uniaxial u1: -4.15%, Std dev: 7.86%, %>20%: 4.11%
+Shear u1: -3.80%, Std dev: 10.23%, %>20%: 2.93%
+Point Load u1: -43.26%, Std dev: 21.02%, %>20%: 91.98%
+Translation u2: 0.00%, Std dev: 0.06%, %>20%: 0.00%
+Uniaxial u2: -8.50%, Std dev: 11.44%, %>20%: 9.29%
+Shear u2: -2.64%, Std dev: 6.99%, %>20%: 1.96%
+Point load u2: -43.84%, Std dev: 72.97%, %>20%: 92.57%
+017
+Translation u1: Mean=-5.10%, Std=2.79%, %>20%=0.00%
+Uniaxial u1: -4.73%, Std dev: 10.67%, %>20%: 4.79%
+Shear u1: -6.20%, Std dev: 11.41%, %>20%: 6.16%
+Point Load u1: -62.03%, Std dev: 42.30%, %>20%: 93.94%
+Translation u2: -0.02%, Std dev: 0.07%, %>20%: 0.00%
+Uniaxial u2: -5.94%, Std dev: 12.36%, %>20%: 6.94%
+Shear u2: -5.38%, Std dev: 8.74%, %>20%: 5.08%
+Point load u2: -52.71%, Std dev: 22.60%, %>20%: 93.74%
+018
+Translation u1: Mean=-5.69%, Std=2.91%, %>20%=0.00%
+Uniaxial u1: -6.26%, Std dev: 11.50%, %>20%: 6.26%
+Shear u1: -5.86%, Std dev: 9.69%, %>20%: 5.38%
+Point Load u1: -57.70%, Std dev: 112.04%, %>20%: 93.65%
+Translation u2: -0.01%, Std dev: 0.06%, %>20%: 0.00%
+Uniaxial u2: -7.77%, Std dev: 18.36%, %>20%: 9.29%
+Shear u2: -2.45%, Std dev: 7.64%, %>20%: 2.05%
+Point load u2: -41.72%, Std dev: 19.17%, %>20%: 92.57%
+019
+Translation u1: Mean=-3.96%, Std=1.87%, %>20%=0.00%
+Uniaxial u1: -3.43%, Std dev: 7.71%, %>20%: 2.76%
+Shear u1: -4.39%, Std dev: 15.46%, %>20%: 3.81%
+Point Load u1: -52.98%, Std dev: 10.19%, %>20%: 89.94%
+Translation u2: -0.01%, Std dev: 0.05%, %>20%: 0.00%
+Uniaxial u2: -4.40%, Std dev: 12.06%, %>20%: 4.34%
+Shear u2: -2.28%, Std dev: 15.35%, %>20%: 1.51%
+Point load u2: -43.13%, Std dev: 7.87%, %>20%: 89.81%
+020
+Translation u1: Mean=-2.16%, Std=1.09%, %>20%=0.00%
+Uniaxial u1: -1.88%, Std dev: 4.85%, %>20%: 1.71%
+Shear u1: -0.93%, Std dev: 3.76%, %>20%: 0.33%
+Point Load u1: -33.54%, Std dev: 45.14%, %>20%: 85.63%
+Translation u2: 0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -4.82%, Std dev: 7.38%, %>20%: 3.27%
+Shear u2: -0.48%, Std dev: 4.03%, %>20%: 0.65%
+Point load u2: -36.38%, Std dev: 21.30%, %>20%: 86.20%
+021
+Translation u1: Mean=-2.39%, Std=1.21%, %>20%=0.00%
+Uniaxial u1: -1.79%, Std dev: 7.13%, %>20%: 2.37%
+Shear u1: -2.11%, Std dev: 9.87%, %>20%: 1.55%
+Point Load u1: -49.03%, Std dev: 45.46%, %>20%: 99.02%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -4.27%, Std dev: 13.49%, %>20%: 5.63%
+Shear u2: -0.66%, Std dev: 10.22%, %>20%: 0.90%
+Point load u2: -47.47%, Std dev: 57.14%, %>20%: 99.51%
+>>
+022
+Translation u1: Mean=-1.58%, Std=0.95%, %>20%=0.00%
+Uniaxial u1: -0.41%, Std dev: 4.60%, %>20%: 1.22%
+Shear u1: -1.15%, Std dev: 6.54%, %>20%: 1.31%
+Point Load u1: -51.96%, Std dev: 42.85%, %>20%: 99.92%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -5.07%, Std dev: 10.23%, %>20%: 5.80%
+Shear u2: -1.97%, Std dev: 6.14%, %>20%: 1.88%
+Point load u2: -55.37%, Std dev: 27.17%, %>20%: 99.92%
+023
+Translation u1: Mean=-1.41%, Std=0.84%, %>20%=0.00%
+Uniaxial u1: 0.41%, Std dev: 4.53%, %>20%: 1.39%
+Shear u1: -1.00%, Std dev: 5.88%, %>20%: 1.14%
+Point Load u1: -48.92%, Std dev: 7.70%, %>20%: 100.00%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -6.52%, Std dev: 11.95%, %>20%: 8.24%
+Shear u2: -2.86%, Std dev: 8.34%, %>20%: 2.69%
+Point load u2: -61.40%, Std dev: 12.15%, %>20%: 100.00%
+024
+Translation u1: Mean=-1.47%, Std=0.89%, %>20%=0.00%
+Uniaxial u1: -0.63%, Std dev: 4.24%, %>20%: 1.16%
+Shear u1: -0.48%, Std dev: 3.81%, %>20%: 0.39%
+Point Load u1: -42.40%, Std dev: 15.36%, %>20%: 94.29%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -6.95%, Std dev: 11.11%, %>20%: 9.03%
+Shear u2: -2.33%, Std dev: 6.05%, %>20%: 0.69%
+Point load u2: -53.19%, Std dev: 10.16%, %>20%: 94.52%
+025
+Translation u1: Mean=-1.75%, Std=0.91%, %>20%=0.00%
+Uniaxial u1: -1.22%, Std dev: 5.51%, %>20%: 1.88%
+Shear u1: -1.28%, Std dev: 6.33%, %>20%: 0.65%
+Point Load u1: -52.02%, Std dev: 10.28%, %>20%: 100.00%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -4.38%, Std dev: 10.86%, %>20%: 5.88%
+Shear u2: -1.65%, Std dev: 7.04%, %>20%: 0.82%
+Point load u2: -54.71%, Std dev: 9.55%, %>20%: 100.00%
+026
+Translation u1: Mean=-1.59%, Std=0.90%, %>20%=0.00%
+Uniaxial u1: -0.93%, Std dev: 3.05%, %>20%: 0.16%
+Shear u1: -0.16%, Std dev: 5.52%, %>20%: 0.41%
+Point Load u1: -33.66%, Std dev: 10.21%, %>20%: 97.71%
+Translation u2: -0.00%, Std dev: 0.05%, %>20%: 0.00%
+Uniaxial u2: -8.08%, Std dev: 10.40%, %>20%: 9.47%
+Shear u2: -2.57%, Std dev: 6.64%, %>20%: 1.96%
+Point load u2: -39.82%, Std dev: 14.30%, %>20%: 98.12%
+027
+Translation u1: Mean=-1.41%, Std=0.84%, %>20%=0.00%
+Uniaxial u1: -0.49%, Std dev: 2.81%, %>20%: 0.33%
+Shear u1: 0.08%, Std dev: 3.57%, %>20%: 0.57%
+Point Load u1: -37.41%, Std dev: 8.24%, %>20%: 99.59%
+Translation u2: 0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -8.61%, Std dev: 12.60%, %>20%: 10.45%
+Shear u2: -2.26%, Std dev: 5.28%, %>20%: 1.71%
+Point load u2: -45.36%, Std dev: 15.54%, %>20%: 98.78%
+028
+Translation u1: Mean=-2.23%, Std=1.04%, %>20%=0.00%
+Uniaxial u1: -1.83%, Std dev: 3.98%, %>20%: 1.06%
+Shear u1: -0.94%, Std dev: 3.88%, %>20%: 0.24%
+Point Load u1: -39.42%, Std dev: 51.42%, %>20%: 98.37%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.47%, Std dev: 7.39%, %>20%: 3.59%
+Shear u2: -0.27%, Std dev: 3.99%, %>20%: 0.57%
+Point load u2: -37.78%, Std dev: 38.04%, %>20%: 98.69%
+029
+Translation u1: Mean=-2.90%, Std=1.36%, %>20%=0.00%
+Uniaxial u1: -1.95%, Std dev: 4.77%, %>20%: 1.17%
+Shear u1: -2.18%, Std dev: 10.70%, %>20%: 1.31%
+Point Load u1: -41.76%, Std dev: 33.63%, %>20%: 99.20%
+Translation u2: 0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -5.29%, Std dev: 8.62%, %>20%: 5.48%
+Shear u2: -1.59%, Std dev: 13.78%, %>20%: 1.24%
+Point load u2: -39.81%, Std dev: 16.59%, %>20%: 99.20%
+030
+Translation u1: Mean=-1.70%, Std=0.74%, %>20%=0.00%
+Uniaxial u1: -1.25%, Std dev: 3.19%, %>20%: 0.29%
+Shear u1: -0.05%, Std dev: 3.49%, %>20%: 0.22%
+Point Load u1: -30.27%, Std dev: 7.79%, %>20%: 82.40%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.31%, Std dev: 4.76%, %>20%: 1.97%
+Shear u2: 0.45%, Std dev: 3.59%, %>20%: 0.22%
+Point load u2: -30.29%, Std dev: 7.48%, %>20%: 82.18%
+031
+Translation u1: Mean=-2.80%, Std=1.30%, %>20%=0.00%
+Uniaxial u1: -2.35%, Std dev: 4.98%, %>20%: 1.53%
+Shear u1: -1.60%, Std dev: 6.52%, %>20%: 1.39%
+Point Load u1: -43.74%, Std dev: 13.61%, %>20%: 88.39%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -4.11%, Std dev: 7.24%, %>20%: 3.51%
+Shear u2: -1.02%, Std dev: 7.53%, %>20%: 0.51%
+Point load u2: -39.37%, Std dev: 16.56%, %>20%: 88.31%
+032
+Translation u1: Mean=-2.90%, Std=1.40%, %>20%=0.00%
+Uniaxial u1: -2.61%, Std dev: 5.96%, %>20%: 2.12%
+Shear u1: -2.91%, Std dev: 15.13%, %>20%: 2.41%
+Point Load u1: -43.70%, Std dev: 10.56%, %>20%: 93.35%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -4.49%, Std dev: 9.00%, %>20%: 4.89%
+Shear u2: -1.16%, Std dev: 11.86%, %>20%: 0.80%
+Point load u2: -39.74%, Std dev: 9.04%, %>20%: 93.06%
+033
+Translation u1: Mean=-2.51%, Std=1.32%, %>20%=0.00%
+Uniaxial u1: -2.80%, Std dev: 7.50%, %>20%: 2.78%
+Shear u1: -1.26%, Std dev: 10.03%, %>20%: 1.54%
+Point Load u1: -29.57%, Std dev: 12.35%, %>20%: 75.68%
+Translation u2: 0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -6.73%, Std dev: 12.48%, %>20%: 7.88%
+Shear u2: -0.83%, Std dev: 6.98%, %>20%: 1.24%
+Point load u2: -30.19%, Std dev: 11.24%, %>20%: 80.93%
+034
+Translation u1: Mean=-2.83%, Std=1.36%, %>20%=0.00%
+Uniaxial u1: -2.33%, Std dev: 5.58%, %>20%: 2.24%
+Shear u1: -2.39%, Std dev: 5.61%, %>20%: 1.78%
+Point Load u1: -49.42%, Std dev: 21.14%, %>20%: 94.21%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -5.71%, Std dev: 10.58%, %>20%: 5.87%
+Shear u2: -1.79%, Std dev: 6.45%, %>20%: 1.47%
+Point load u2: -47.13%, Std dev: 33.78%, %>20%: 94.21%
+035
+Translation u1: Mean=-2.59%, Std=1.34%, %>20%=0.00%
+Uniaxial u1: -1.96%, Std dev: 5.15%, %>20%: 1.70%
+Shear u1: -2.55%, Std dev: 12.01%, %>20%: 2.08%
+Point Load u1: -50.39%, Std dev: 9.98%, %>20%: 94.44%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -4.37%, Std dev: 8.77%, %>20%: 5.56%
+Shear u2: -1.95%, Std dev: 6.75%, %>20%: 1.39%
+Point load u2: -48.27%, Std dev: 8.76%, %>20%: 94.52%
+036
+Translation u1: Mean=-4.49%, Std=2.09%, %>20%=0.00%
+Uniaxial u1: -4.44%, Std dev: 7.36%, %>20%: 4.31%
+Shear u1: -5.22%, Std dev: 21.23%, %>20%: 3.65%
+Point Load u1: -46.58%, Std dev: 10.94%, %>20%: 88.75%
+Translation u2: -0.00%, Std dev: 0.05%, %>20%: 0.00%
+Uniaxial u2: -5.76%, Std dev: 9.92%, %>20%: 6.28%
+Shear u2: -2.50%, Std dev: 13.09%, %>20%: 2.26%
+Point load u2: -39.57%, Std dev: 8.62%, %>20%: 88.31%
+037
+Translation u1: Mean=-3.13%, Std=1.49%, %>20%=0.00%
+Uniaxial u1: -3.23%, Std dev: 6.33%, %>20%: 2.48%
+Shear u1: -1.79%, Std dev: 11.89%, %>20%: 1.53%
+Point Load u1: -30.36%, Std dev: 14.12%, %>20%: 73.05%
+Translation u2: 0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -7.88%, Std dev: 11.85%, %>20%: 9.13%
+Shear u2: -1.59%, Std dev: 12.35%, %>20%: 1.90%
+Point load u2: -29.19%, Std dev: 14.53%, %>20%: 70.34%
+038
+Translation u1: Mean=-3.40%, Std=1.61%, %>20%=0.00%
+Uniaxial u1: -3.06%, Std dev: 8.48%, %>20%: 2.24%
+Shear u1: -2.60%, Std dev: 6.40%, %>20%: 1.93%
+Point Load u1: -48.55%, Std dev: 54.28%, %>20%: 93.98%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -5.50%, Std dev: 11.87%, %>20%: 7.03%
+Shear u2: -1.51%, Std dev: 8.95%, %>20%: 1.08%
+Point load u2: -40.86%, Std dev: 12.58%, %>20%: 94.13%
+039
+Translation u1: Mean=-3.32%, Std=1.61%, %>20%=0.00%
+Uniaxial u1: -3.66%, Std dev: 7.24%, %>20%: 4.31%
+Shear u1: -2.34%, Std dev: 8.48%, %>20%: 1.83%
+Point Load u1: -39.69%, Std dev: 11.44%, %>20%: 85.17%
+Translation u2: 0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -5.11%, Std dev: 8.43%, %>20%: 5.26%
+Shear u2: -1.33%, Std dev: 9.63%, %>20%: 1.02%
+Point load u2: -35.66%, Std dev: 8.72%, %>20%: 86.78%
+040
+Translation u1: Mean=-3.32%, Std=1.61%, %>20%=0.00%
+Uniaxial u1: -3.66%, Std dev: 7.24%, %>20%: 4.31%
+Shear u1: -2.34%, Std dev: 8.48%, %>20%: 1.83%
+Point Load u1: -39.69%, Std dev: 11.44%, %>20%: 85.17%
+Translation u2: 0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -5.11%, Std dev: 8.43%, %>20%: 5.26%
+Shear u2: -1.33%, Std dev: 9.63%, %>20%: 1.02%
+Point load u2: -35.66%, Std dev: 8.72%, %>20%: 86.78%
+041
+Translation u1: Mean=-3.35%, Std=1.75%, %>20%=0.00%
+Uniaxial u1: -3.65%, Std dev: 7.46%, %>20%: 3.24%
+Shear u1: -2.64%, Std dev: 14.26%, %>20%: 2.86%
+Point Load u1: -33.98%, Std dev: 32.65%, %>20%: 85.33%
+Translation u2: 0.00%, Std dev: 0.05%, %>20%: 0.00%
+Uniaxial u2: -6.87%, Std dev: 12.78%, %>20%: 7.80%
+Shear u2: -1.85%, Std dev: 11.24%, %>20%: 2.24%
+Point load u2: -34.28%, Std dev: 11.23%, %>20%: 86.95%
+042
+Translation u1: Mean=-3.29%, Std=1.50%, %>20%=0.00%
+Uniaxial u1: -3.03%, Std dev: 6.60%, %>20%: 2.86%
+Shear u1: -2.50%, Std dev: 8.55%, %>20%: 2.39%
+Point Load u1: -43.28%, Std dev: 19.54%, %>20%: 93.44%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -5.39%, Std dev: 9.93%, %>20%: 6.02%
+Shear u2: -1.59%, Std dev: 9.64%, %>20%: 1.78%
+Point load u2: -37.98%, Std dev: 18.60%, %>20%: 91.66%
+043
+Translation u1: Mean=-2.08%, Std=1.20%, %>20%=0.00%
+Uniaxial u1: -1.62%, Std dev: 4.45%, %>20%: 1.31%
+Shear u1: -0.81%, Std dev: 8.47%, %>20%: 1.62%
+Point Load u1: -34.84%, Std dev: 61.48%, %>20%: 85.48%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -7.70%, Std dev: 12.43%, %>20%: 9.58%
+Shear u2: -0.91%, Std dev: 4.82%, %>20%: 1.08%
+Point load u2: -35.29%, Std dev: 52.19%, %>20%: 85.25%
+044
+Translation u1: Mean=-2.08%, Std=1.20%, %>20%=0.00%
+Uniaxial u1: -1.62%, Std dev: 4.45%, %>20%: 1.31%
+Shear u1: -0.81%, Std dev: 8.47%, %>20%: 1.62%
+Point Load u1: -34.84%, Std dev: 61.48%, %>20%: 85.48%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -7.70%, Std dev: 12.43%, %>20%: 9.58%
+Shear u2: -0.91%, Std dev: 4.82%, %>20%: 1.08%
+Point load u2: -35.29%, Std dev: 52.19%, %>20%: 85.25%
+045
+Translation u1: Mean=-3.05%, Std=1.60%, %>20%=0.00%
+Uniaxial u1: -2.24%, Std dev: 5.06%, %>20%: 1.70%
+Shear u1: -2.45%, Std dev: 7.87%, %>20%: 2.16%
+Point Load u1: -43.94%, Std dev: 16.76%, %>20%: 92.82%
+Translation u2: 0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -6.22%, Std dev: 12.37%, %>20%: 7.18%
+Shear u2: -0.91%, Std dev: 6.19%, %>20%: 1.54%
+Point load u2: -40.78%, Std dev: 17.24%, %>20%: 92.74%
+046
+Translation u1: Mean=-2.46%, Std=1.40%, %>20%=0.00%
+Uniaxial u1: -1.71%, Std dev: 6.37%, %>20%: 1.00%
+Shear u1: -2.20%, Std dev: 11.88%, %>20%: 1.85%
+Point Load u1: -43.80%, Std dev: 29.57%, %>20%: 90.97%
+Translation u2: 0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -6.92%, Std dev: 16.32%, %>20%: 8.49%
+Shear u2: -0.84%, Std dev: 8.56%, %>20%: 1.00%
+Point load u2: -40.60%, Std dev: 18.35%, %>20%: 91.81%
+047
+Translation u1: Mean=-2.85%, Std=1.38%, %>20%=0.00%
+Uniaxial u1: -2.25%, Std dev: 4.91%, %>20%: 1.78%
+Shear u1: -2.04%, Std dev: 8.14%, %>20%: 1.93%
+Point Load u1: -45.12%, Std dev: 10.95%, %>20%: 93.28%
+Translation u2: 0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -5.87%, Std dev: 11.32%, %>20%: 7.34%
+Shear u2: -0.88%, Std dev: 8.34%, %>20%: 0.85%
+Point load u2: -40.73%, Std dev: 10.43%, %>20%: 93.28%
+048
+Translation u1: Mean=-1.80%, Std=0.95%, %>20%=0.00%
+Uniaxial u1: -0.75%, Std dev: 2.87%, %>20%: 0.46%
+Shear u1: -0.79%, Std dev: 7.61%, %>20%: 0.69%
+Point Load u1: -39.51%, Std dev: 15.80%, %>20%: 92.05%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.90%, Std dev: 10.09%, %>20%: 5.71%
+Shear u2: 0.05%, Std dev: 4.30%, %>20%: 0.46%
+Point load u2: -40.89%, Std dev: 34.16%, %>20%: 92.97%
+049
+Translation u1: Mean=-2.76%, Std=1.49%, %>20%=0.00%
+Uniaxial u1: -2.54%, Std dev: 7.02%, %>20%: 2.16%
+Shear u1: -2.56%, Std dev: 11.97%, %>20%: 2.39%
+Point Load u1: -43.12%, Std dev: 19.73%, %>20%: 92.66%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -5.98%, Std dev: 11.56%, %>20%: 7.88%
+Shear u2: -1.82%, Std dev: 12.41%, %>20%: 1.08%
+Point load u2: -40.55%, Std dev: 19.92%, %>20%: 93.05%
+050
+Translation u1: Mean=-2.08%, Std=1.30%, %>20%=0.00%
+Uniaxial u1: -1.35%, Std dev: 4.56%, %>20%: 1.16%
+Shear u1: -1.75%, Std dev: 12.48%, %>20%: 1.24%
+Point Load u1: -39.73%, Std dev: 15.89%, %>20%: 90.58%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -6.55%, Std dev: 10.02%, %>20%: 7.41%
+Shear u2: -1.83%, Std dev: 11.99%, %>20%: 1.31%
+Point load u2: -40.37%, Std dev: 12.68%, %>20%: 91.20%
+051
+Translation u1: Mean=-1.96%, Std=1.26%, %>20%=0.00%
+Uniaxial u1: -0.87%, Std dev: 3.25%, %>20%: 0.51%
+Shear u1: -0.55%, Std dev: 3.66%, %>20%: 0.29%
+Point Load u1: -44.25%, Std dev: 12.89%, %>20%: 85.39%
+Translation u2: -0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -5.54%, Std dev: 10.74%, %>20%: 5.84%
+Shear u2: -0.97%, Std dev: 8.82%, %>20%: 0.51%
+Point load u2: -45.80%, Std dev: 15.39%, %>20%: 86.92%
+052
+Translation u1: Mean=-1.76%, Std=1.15%, %>20%=0.00%
+Uniaxial u1: -1.05%, Std dev: 4.38%, %>20%: 1.08%
+Shear u1: -0.69%, Std dev: 8.10%, %>20%: 1.39%
+Point Load u1: -37.66%, Std dev: 10.60%, %>20%: 90.35%
+Translation u2: 0.00%, Std dev: 0.04%, %>20%: 0.00%
+Uniaxial u2: -7.04%, Std dev: 26.30%, %>20%: 7.10%
+Shear u2: -1.35%, Std dev: 8.83%, %>20%: 0.54%
+Point load u2: -41.43%, Std dev: 11.16%, %>20%: 91.51%
+053
+Translation u1: Mean=-2.05%, Std=1.15%, %>20%=0.00%
+Uniaxial u1: -1.35%, Std dev: 4.01%, %>20%: 1.10%
+Shear u1: -1.06%, Std dev: 10.88%, %>20%: 0.88%
+Point Load u1: -38.84%, Std dev: 26.24%, %>20%: 83.20%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.66%, Std dev: 9.06%, %>20%: 4.89%
+Shear u2: -0.32%, Std dev: 7.47%, %>20%: 0.80%
+Point load u2: -37.33%, Std dev: 21.97%, %>20%: 84.44%
+054
+Translation u1: Mean=-1.25%, Std=0.65%, %>20%=0.00%
+Uniaxial u1: -0.55%, Std dev: 2.76%, %>20%: 0.44%
+Shear u1: 0.15%, Std dev: 2.83%, %>20%: 0.15%
+Point Load u1: -38.05%, Std dev: 9.14%, %>20%: 87.58%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.27%, Std dev: 7.04%, %>20%: 3.36%
+Shear u2: -0.34%, Std dev: 3.20%, %>20%: 0.22%
+Point load u2: -39.41%, Std dev: 10.56%, %>20%: 87.87%
+055
+ranslation u1: Mean=-1.36%, Std=0.77%, %>20%=0.00%
+Uniaxial u1: -0.88%, Std dev: 3.86%, %>20%: 0.80%
+Shear u1: -0.06%, Std dev: 3.40%, %>20%: 0.51%
+Point Load u1: -43.42%, Std dev: 10.26%, %>20%: 87.73%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.42%, Std dev: 6.29%, %>20%: 2.85%
+Shear u2: 0.20%, Std dev: 2.85%, %>20%: 0.15%
+Point load u2: -43.59%, Std dev: 10.64%, %>20%: 87.44%
+056
+Translation u1: Mean=-1.36%, Std=0.77%, %>20%=0.00%
+Uniaxial u1: -0.88%, Std dev: 3.86%, %>20%: 0.80%
+Shear u1: -0.06%, Std dev: 3.40%, %>20%: 0.51%
+Point Load u1: -43.42%, Std dev: 10.26%, %>20%: 87.73%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.42%, Std dev: 6.29%, %>20%: 2.85%
+Shear u2: 0.20%, Std dev: 2.85%, %>20%: 0.15%
+Point load u2: -43.59%, Std dev: 10.64%, %>20%: 87.44%
+057
+Translation u1: Mean=-1.47%, Std=0.74%, %>20%=0.00%
+Uniaxial u1: -0.53%, Std dev: 2.69%, %>20%: 0.08%
+Shear u1: 0.10%, Std dev: 4.65%, %>20%: 0.23%
+Point Load u1: -33.51%, Std dev: 18.89%, %>20%: 86.25%
+Translation u2: -0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -3.59%, Std dev: 7.24%, %>20%: 3.40%
+Shear u2: 0.24%, Std dev: 10.19%, %>20%: 0.31%
+Point load u2: -36.07%, Std dev: 11.58%, %>20%: 91.43%
+058
+Translation u1: Mean=-1.50%, Std=0.74%, %>20%=0.00%
+Uniaxial u1: -0.59%, Std dev: 2.94%, %>20%: 0.39%
+Shear u1: -0.26%, Std dev: 3.30%, %>20%: 0.15%
+Point Load u1: -44.57%, Std dev: 11.45%, %>20%: 93.75%
+Translation u2: -0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -3.15%, Std dev: 6.43%, %>20%: 3.01%
+Shear u2: 0.72%, Std dev: 3.14%, %>20%: 0.39%
+Point load u2: -42.32%, Std dev: 8.32%, %>20%: 94.21%
+059
+Translation u1: Mean=-1.22%, Std=0.63%, %>20%=0.00%
+Uniaxial u1: -0.46%, Std dev: 2.55%, %>20%: 0.07%
+Shear u1: 0.39%, Std dev: 2.92%, %>20%: 0.22%
+Point Load u1: -36.72%, Std dev: 8.88%, %>20%: 87.36%
+Translation u2: -0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -3.37%, Std dev: 5.93%, %>20%: 2.34%
+Shear u2: 0.70%, Std dev: 2.90%, %>20%: 0.15%
+Point load u2: -37.78%, Std dev: 8.31%, %>20%: 88.39%
+060
+Translation u1: Mean=-2.27%, Std=1.01%, %>20%=0.00%
+Uniaxial u1: -1.43%, Std dev: 3.51%, %>20%: 0.77%
+Shear u1: -0.86%, Std dev: 4.49%, %>20%: 0.77%
+Point Load u1: -40.06%, Std dev: 24.82%, %>20%: 91.66%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.50%, Std dev: 6.72%, %>20%: 3.86%
+Shear u2: 0.36%, Std dev: 3.12%, %>20%: 0.31%
+Point load u2: -40.34%, Std dev: 32.11%, %>20%: 94.13%
+061
+Translation u1: Mean=-1.50%, Std=0.67%, %>20%=0.00%
+Uniaxial u1: -0.70%, Std dev: 2.67%, %>20%: 0.23%
+Shear u1: 0.20%, Std dev: 8.03%, %>20%: 0.23%
+Point Load u1: -40.05%, Std dev: 47.07%, %>20%: 91.27%
+Translation u2: -0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -3.03%, Std dev: 5.78%, %>20%: 2.47%
+Shear u2: 0.29%, Std dev: 3.58%, %>20%: 0.15%
+Point load u2: -37.74%, Std dev: 25.04%, %>20%: 93.75%
+062
+Translation u1: Mean=-1.50%, Std=0.72%, %>20%=0.00%
+Uniaxial u1: -0.96%, Std dev: 3.10%, %>20%: 0.31%
+Shear u1: -0.67%, Std dev: 12.06%, %>20%: 0.31%
+Point Load u1: -39.42%, Std dev: 9.61%, %>20%: 91.74%
+Translation u2: 0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -3.65%, Std dev: 13.47%, %>20%: 3.01%
+Shear u2: 0.25%, Std dev: 6.16%, %>20%: 0.39%
+Point load u2: -39.66%, Std dev: 7.71%, %>20%: 93.36%
+063
+Translation u1: Mean=-1.53%, Std=0.69%, %>20%=0.00%
+Uniaxial u1: -0.72%, Std dev: 2.68%, %>20%: 0.22%
+Shear u1: -0.10%, Std dev: 3.44%, %>20%: 0.37%
+Point Load u1: -38.36%, Std dev: 25.44%, %>20%: 85.17%
+Translation u2: 0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -2.84%, Std dev: 5.09%, %>20%: 1.75%
+Shear u2: 0.75%, Std dev: 2.47%, %>20%: 0.00%
+Point load u2: -38.45%, Std dev: 8.61%, %>20%: 89.19%
+064
+Translation u1: Mean=-1.83%, Std=0.77%, %>20%=0.00%
+Uniaxial u1: -1.00%, Std dev: 3.12%, %>20%: 0.58%
+Shear u1: -0.16%, Std dev: 3.26%, %>20%: 0.37%
+Point Load u1: -37.88%, Std dev: 61.20%, %>20%: 82.03%
+Translation u2: -0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -2.58%, Std dev: 5.31%, %>20%: 1.53%
+Shear u2: 0.60%, Std dev: 2.49%, %>20%: 0.07%
+Point load u2: -38.72%, Std dev: 34.70%, %>20%: 88.82%
+065
+Translation u1: Mean=-1.28%, Std=0.70%, %>20%=0.00%
+Uniaxial u1: -0.59%, Std dev: 3.03%, %>20%: 0.37%
+Shear u1: 0.06%, Std dev: 3.16%, %>20%: 0.29%
+Point Load u1: -44.20%, Std dev: 10.10%, %>20%: 89.04%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.01%, Std dev: 7.83%, %>20%: 3.58%
+Shear u2: -0.44%, Std dev: 3.49%, %>20%: 0.37%
+Point load u2: -45.25%, Std dev: 11.14%, %>20%: 88.68%
+066
+Translation u1: Mean=-2.06%, Std=0.91%, %>20%=0.00%
+Uniaxial u1: -1.24%, Std dev: 2.87%, %>20%: 0.23%
+Shear u1: -0.88%, Std dev: 7.67%, %>20%: 0.31%
+Point Load u1: -42.03%, Std dev: 13.94%, %>20%: 91.97%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.64%, Std dev: 6.62%, %>20%: 2.55%
+Shear u2: 0.03%, Std dev: 7.38%, %>20%: 0.23%
+Point load u2: -40.12%, Std dev: 9.92%, %>20%: 93.90%
+067
+Translation u1: Mean=-1.62%, Std=0.79%, %>20%=0.00%
+Uniaxial u1: -0.61%, Std dev: 2.38%, %>20%: 0.07%
+Shear u1: -0.29%, Std dev: 5.24%, %>20%: 0.15%
+Point Load u1: -43.43%, Std dev: 10.26%, %>20%: 88.39%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.13%, Std dev: 6.15%, %>20%: 2.12%
+Shear u2: 0.02%, Std dev: 3.85%, %>20%: 0.15%
+Point load u2: -40.66%, Std dev: 8.15%, %>20%: 88.68%
+068
+Translation u1: Mean=-1.50%, Std=0.81%, %>20%=0.00%
+Uniaxial u1: -0.76%, Std dev: 2.78%, %>20%: 0.31%
+Shear u1: -0.40%, Std dev: 6.52%, %>20%: 0.46%
+Point Load u1: -38.47%, Std dev: 10.93%, %>20%: 89.88%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.00%, Std dev: 7.38%, %>20%: 3.40%
+Shear u2: 0.12%, Std dev: 8.55%, %>20%: 0.77%
+Point load u2: -38.72%, Std dev: 9.56%, %>20%: 92.05%
+069
+Translation u1: Mean=-1.68%, Std=0.80%, %>20%=0.00%
+Uniaxial u1: -1.11%, Std dev: 3.10%, %>20%: 0.23%
+Shear u1: -0.55%, Std dev: 7.62%, %>20%: 0.54%
+Point Load u1: -37.58%, Std dev: 40.75%, %>20%: 88.49%
+Translation u2: 0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -3.54%, Std dev: 7.37%, %>20%: 3.32%
+Shear u2: 0.32%, Std dev: 4.79%, %>20%: 0.15%
+Point load u2: -36.68%, Std dev: 22.85%, %>20%: 91.12%
+070
+Translation u1: Mean=-1.81%, Std=0.86%, %>20%=0.00%
+Uniaxial u1: -0.95%, Std dev: 3.02%, %>20%: 0.22%
+Shear u1: -0.21%, Std dev: 3.71%, %>20%: 0.58%
+Point Load u1: -42.25%, Std dev: 14.88%, %>20%: 87.80%
+Translation u2: -0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -2.96%, Std dev: 6.11%, %>20%: 2.12%
+Shear u2: 0.49%, Std dev: 3.06%, %>20%: 0.00%
+Point load u2: -40.19%, Std dev: 9.20%, %>20%: 89.04%
+071
+Translation u1: Mean=-1.26%, Std=0.73%, %>20%=0.00%
+Uniaxial u1: -0.40%, Std dev: 2.81%, %>20%: 0.22%
+Shear u1: 0.36%, Std dev: 2.91%, %>20%: 0.15%
+Point Load u1: -43.46%, Std dev: 14.00%, %>20%: 89.34%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.01%, Std dev: 5.23%, %>20%: 1.90%
+Shear u2: -0.09%, Std dev: 2.67%, %>20%: 0.15%
+Point load u2: -44.21%, Std dev: 10.28%, %>20%: 89.26%
+072
+Translation u1: Mean=-1.34%, Std=0.72%, %>20%=0.00%
+Uniaxial u1: -0.65%, Std dev: 3.02%, %>20%: 0.58%
+Shear u1: 0.26%, Std dev: 3.27%, %>20%: 0.22%
+Point Load u1: -40.81%, Std dev: 9.47%, %>20%: 86.85%
+Translation u2: -0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -3.54%, Std dev: 6.64%, %>20%: 2.34%
+Shear u2: 0.34%, Std dev: 3.27%, %>20%: 0.37%
+Point load u2: -40.56%, Std dev: 9.05%, %>20%: 87.36%
+073
+Translation u1: Mean=-1.26%, Std=0.73%, %>20%=0.00%
+Uniaxial u1: -0.40%, Std dev: 2.81%, %>20%: 0.22%
+Shear u1: 0.36%, Std dev: 2.91%, %>20%: 0.15%
+Point Load u1: -43.46%, Std dev: 14.00%, %>20%: 89.34%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.01%, Std dev: 5.23%, %>20%: 1.90%
+Shear u2: -0.09%, Std dev: 2.67%, %>20%: 0.15%
+Point load u2: -44.21%, Std dev: 10.28%, %>20%: 89.26%
+074
+Translation u1: Mean=-1.28%, Std=0.70%, %>20%=0.00%
+Uniaxial u1: -0.31%, Std dev: 3.17%, %>20%: 0.37%
+Shear u1: 0.10%, Std dev: 2.83%, %>20%: 0.15%
+Point Load u1: -49.23%, Std dev: 9.76%, %>20%: 89.41%
+Translation u2: -0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -2.76%, Std dev: 6.57%, %>20%: 2.48%
+Shear u2: 0.35%, Std dev: 2.80%, %>20%: 0.07%
+Point load u2: -47.38%, Std dev: 9.22%, %>20%: 89.19%
+075
+Translation u1: Mean=-1.18%, Std=0.63%, %>20%=0.00%
+Uniaxial u1: -0.42%, Std dev: 2.55%, %>20%: 0.29%
+Shear u1: 0.10%, Std dev: 8.51%, %>20%: 0.37%
+Point Load u1: -35.09%, Std dev: 8.07%, %>20%: 90.50%
+Translation u2: 0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -3.81%, Std dev: 6.88%, %>20%: 3.65%
+Shear u2: 0.31%, Std dev: 2.67%, %>20%: 0.07%
+Point load u2: -34.54%, Std dev: 9.23%, %>20%: 87.22%
+076
+Translation u1: Mean=-1.85%, Std=0.87%, %>20%=0.00%
+Uniaxial u1: -1.07%, Std dev: 3.02%, %>20%: 0.29%
+Shear u1: -0.72%, Std dev: 3.93%, %>20%: 0.66%
+Point Load u1: -40.75%, Std dev: 10.18%, %>20%: 87.87%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.84%, Std dev: 7.63%, %>20%: 3.94%
+Shear u2: 0.25%, Std dev: 3.30%, %>20%: 0.29%
+Point load u2: -40.30%, Std dev: 8.78%, %>20%: 89.04%
+077
+Translation u1: Mean=-1.34%, Std=0.71%, %>20%=0.00%
+Uniaxial u1: -0.72%, Std dev: 3.47%, %>20%: 0.54%
+Shear u1: -0.17%, Std dev: 6.56%, %>20%: 0.39%
+Point Load u1: -44.38%, Std dev: 9.67%, %>20%: 93.20%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.11%, Std dev: 6.86%, %>20%: 3.01%
+Shear u2: -0.38%, Std dev: 9.98%, %>20%: 0.23%
+Point load u2: -44.54%, Std dev: 9.28%, %>20%: 93.82%
+078
+Translation u1: Mean=-2.54%, Std=1.26%, %>20%=0.00%
+Uniaxial u1: -1.94%, Std dev: 4.13%, %>20%: 1.00%
+Shear u1: -1.00%, Std dev: 6.28%, %>20%: 1.24%
+Point Load u1: -41.53%, Std dev: 131.27%, %>20%: 85.25%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.17%, Std dev: 6.18%, %>20%: 2.39%
+Shear u2: -0.05%, Std dev: 6.29%, %>20%: 0.31%
+Point load u2: -38.67%, Std dev: 36.44%, %>20%: 93.67%
+079
+Translation u1: Mean=-1.97%, Std=0.93%, %>20%=0.00%
+Uniaxial u1: -1.36%, Std dev: 3.53%, %>20%: 0.58%
+Shear u1: -0.74%, Std dev: 3.86%, %>20%: 0.51%
+Point Load u1: -40.25%, Std dev: 11.77%, %>20%: 88.90%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.50%, Std dev: 6.44%, %>20%: 2.85%
+Shear u2: 0.08%, Std dev: 3.28%, %>20%: 0.37%
+Point load u2: -38.73%, Std dev: 15.48%, %>20%: 88.39%
+080
+Translation u1: Mean=-1.36%, Std=0.71%, %>20%=0.00%
+Uniaxial u1: -0.69%, Std dev: 3.00%, %>20%: 0.29%
+Shear u1: 0.01%, Std dev: 3.35%, %>20%: 0.51%
+Point Load u1: -40.50%, Std dev: 22.63%, %>20%: 89.04%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.48%, Std dev: 6.89%, %>20%: 3.14%
+Shear u2: 0.24%, Std dev: 2.62%, %>20%: 0.15%
+Point load u2: -41.84%, Std dev: 19.43%, %>20%: 88.68%
+081
+Translation u1: Mean=-1.27%, Std=0.71%, %>20%=0.00%
+Uniaxial u1: -0.55%, Std dev: 3.27%, %>20%: 0.58%
+Shear u1: -0.08%, Std dev: 2.96%, %>20%: 0.15%
+Point Load u1: -42.96%, Std dev: 9.88%, %>20%: 89.26%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.68%, Std dev: 6.89%, %>20%: 3.29%
+Shear u2: 0.02%, Std dev: 3.19%, %>20%: 0.44%
+Point load u2: -43.97%, Std dev: 11.06%, %>20%: 87.87%
+082
+Translation u1: Mean=-1.69%, Std=0.79%, %>20%=0.00%
+Uniaxial u1: -1.11%, Std dev: 3.29%, %>20%: 0.37%
+Shear u1: -0.38%, Std dev: 6.68%, %>20%: 0.66%
+Point Load u1: -36.66%, Std dev: 10.35%, %>20%: 87.00%
+Translation u2: 0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -2.58%, Std dev: 4.60%, %>20%: 1.10%
+Shear u2: 0.40%, Std dev: 3.17%, %>20%: 0.29%
+Point load u2: -35.60%, Std dev: 6.83%, %>20%: 88.90%
+083
+Translation u1: Mean=-1.74%, Std=0.84%, %>20%=0.00%
+Uniaxial u1: -0.78%, Std dev: 3.23%, %>20%: 0.29%
+Shear u1: -0.66%, Std dev: 4.37%, %>20%: 0.58%
+Point Load u1: -48.70%, Std dev: 8.60%, %>20%: 89.34%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.26%, Std dev: 6.23%, %>20%: 2.63%
+Shear u2: 0.13%, Std dev: 3.24%, %>20%: 0.22%
+Point load u2: -46.44%, Std dev: 7.42%, %>20%: 89.41%
+084
+Translation u1: Mean=-1.15%, Std=0.63%, %>20%=0.00%
+Uniaxial u1: -0.57%, Std dev: 2.82%, %>20%: 0.22%
+Shear u1: 0.48%, Std dev: 2.71%, %>20%: 0.00%
+Point Load u1: -31.72%, Std dev: 7.53%, %>20%: 84.30%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.34%, Std dev: 5.94%, %>20%: 3.14%
+Shear u2: -0.19%, Std dev: 3.17%, %>20%: 0.29%
+Point load u2: -31.64%, Std dev: 9.09%, %>20%: 81.59%
+085
+Translation u1: Mean=-1.46%, Std=0.74%, %>20%=0.00%
+Uniaxial u1: -0.49%, Std dev: 2.53%, %>20%: 0.22%
+Shear u1: -0.26%, Std dev: 3.15%, %>20%: 0.15%
+Point Load u1: -41.56%, Std dev: 12.67%, %>20%: 88.09%
+Translation u2: 0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -3.13%, Std dev: 5.77%, %>20%: 1.90%
+Shear u2: 0.87%, Std dev: 3.12%, %>20%: 0.15%
+Point load u2: -39.23%, Std dev: 8.49%, %>20%: 87.58%
+086
+Translation u1: Mean=-1.45%, Std=0.76%, %>20%=0.00%
+Uniaxial u1: -0.61%, Std dev: 2.25%, %>20%: 0.00%
+Shear u1: 0.19%, Std dev: 3.48%, %>20%: 0.37%
+Point Load u1: -33.44%, Std dev: 26.55%, %>20%: 82.40%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.20%, Std dev: 5.49%, %>20%: 1.90%
+Shear u2: 0.73%, Std dev: 2.80%, %>20%: 0.22%
+Point load u2: -36.12%, Std dev: 40.97%, %>20%: 87.22%
+087
+Translation u1: Mean=-1.51%, Std=0.80%, %>20%=0.00%
+Uniaxial u1: -1.15%, Std dev: 5.53%, %>20%: 2.04%
+Shear u1: -0.27%, Std dev: 3.48%, %>20%: 0.41%
+Point Load u1: -44.66%, Std dev: 10.68%, %>20%: 98.61%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.95%, Std dev: 8.51%, %>20%: 3.67%
+Shear u2: -0.29%, Std dev: 6.90%, %>20%: 0.33%
+Point load u2: -44.23%, Std dev: 10.18%, %>20%: 98.53%
+088
+Translation u1: Mean=-1.33%, Std=0.81%, %>20%=0.00%
+Uniaxial u1: -0.56%, Std dev: 2.87%, %>20%: 0.24%
+Shear u1: 0.32%, Std dev: 3.74%, %>20%: 0.49%
+Point Load u1: -27.15%, Std dev: 19.49%, %>20%: 75.67%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.74%, Std dev: 9.17%, %>20%: 4.16%
+Shear u2: 0.29%, Std dev: 6.85%, %>20%: 0.33%
+Point load u2: -28.42%, Std dev: 27.48%, %>20%: 78.45%
+089
+Translation u1: Mean=-1.25%, Std=0.63%, %>20%=0.00%
+Uniaxial u1: -0.84%, Std dev: 3.85%, %>20%: 1.22%
+Shear u1: 0.30%, Std dev: 2.92%, %>20%: 0.08%
+Point Load u1: -39.26%, Std dev: 12.16%, %>20%: 95.27%
+Translation u2: 0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -3.46%, Std dev: 8.43%, %>20%: 3.59%
+Shear u2: 0.63%, Std dev: 2.39%, %>20%: 0.08%
+Point load u2: -40.03%, Std dev: 9.22%, %>20%: 97.88%
+090
+Translation u1: Mean=-1.30%, Std=0.86%, %>20%=0.00%
+Uniaxial u1: -0.25%, Std dev: 2.59%, %>20%: 0.33%
+Shear u1: -0.13%, Std dev: 3.26%, %>20%: 0.41%
+Point Load u1: -42.17%, Std dev: 10.87%, %>20%: 98.86%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.49%, Std dev: 6.84%, %>20%: 3.02%
+Shear u2: 0.09%, Std dev: 4.40%, %>20%: 0.33%
+Point load u2: -41.61%, Std dev: 14.66%, %>20%: 97.96%
+091
+Translation u1: Mean=-1.57%, Std=0.84%, %>20%=0.00%
+Uniaxial u1: -0.62%, Std dev: 3.00%, %>20%: 0.31%
+Shear u1: -0.06%, Std dev: 3.57%, %>20%: 0.54%
+Point Load u1: -39.63%, Std dev: 10.72%, %>20%: 91.35%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -2.53%, Std dev: 5.38%, %>20%: 1.62%
+Shear u2: 0.71%, Std dev: 2.57%, %>20%: 0.00%
+Point load u2: -38.73%, Std dev: 9.30%, %>20%: 90.27%
+092
+Translation u1: Mean=-1.06%, Std=0.60%, %>20%=0.00%
+Uniaxial u1: -0.04%, Std dev: 2.20%, %>20%: 0.07%
+Shear u1: 0.42%, Std dev: 3.02%, %>20%: 0.22%
+Point Load u1: -43.14%, Std dev: 8.87%, %>20%: 88.75%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.39%, Std dev: 8.62%, %>20%: 4.24%
+Shear u2: -0.16%, Std dev: 4.31%, %>20%: 0.80%
+Point load u2: -44.05%, Std dev: 10.79%, %>20%: 87.29%
+093
+Translation u1: Mean=-1.20%, Std=0.61%, %>20%=0.00%
+Uniaxial u1: -0.43%, Std dev: 3.00%, %>20%: 0.46%
+Shear u1: 0.23%, Std dev: 2.93%, %>20%: 0.15%
+Point Load u1: -41.42%, Std dev: 21.27%, %>20%: 91.81%
+Translation u2: -0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -2.93%, Std dev: 6.25%, %>20%: 2.47%
+Shear u2: 0.84%, Std dev: 2.76%, %>20%: 0.08%
+Point load u2: -42.48%, Std dev: 48.30%, %>20%: 90.12%
+094
+Translation u1: Mean=-1.26%, Std=0.61%, %>20%=0.00%
+Uniaxial u1: -0.43%, Std dev: 2.33%, %>20%: 0.07%
+Shear u1: 0.59%, Std dev: 2.92%, %>20%: 0.15%
+Point Load u1: -34.39%, Std dev: 80.20%, %>20%: 76.04%
+Translation u2: 0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -2.97%, Std dev: 5.33%, %>20%: 1.97%
+Shear u2: 0.78%, Std dev: 2.46%, %>20%: 0.15%
+Point load u2: -35.01%, Std dev: 38.96%, %>20%: 81.52%
+095
+Translation u1: Mean=-1.75%, Std=0.85%, %>20%=0.00%
+Uniaxial u1: -1.32%, Std dev: 3.45%, %>20%: 0.51%
+Shear u1: -0.05%, Std dev: 6.64%, %>20%: 0.66%
+Point Load u1: -30.48%, Std dev: 13.36%, %>20%: 72.97%
+Translation u2: -0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -2.96%, Std dev: 5.89%, %>20%: 1.75%
+Shear u2: 0.67%, Std dev: 5.28%, %>20%: 0.29%
+Point load u2: -32.96%, Std dev: 11.17%, %>20%: 83.64%
+096
+Translation u1: Mean=-1.83%, Std=0.82%, %>20%=0.00%
+Uniaxial u1: -0.95%, Std dev: 2.91%, %>20%: 0.23%
+Shear u1: -0.45%, Std dev: 3.65%, %>20%: 0.46%
+Point Load u1: -33.52%, Std dev: 14.84%, %>20%: 80.46%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.15%, Std dev: 7.83%, %>20%: 4.25%
+Shear u2: 0.34%, Std dev: 6.66%, %>20%: 0.15%
+Point load u2: -34.49%, Std dev: 13.42%, %>20%: 87.64%
+097
+Translation u1: Mean=-1.53%, Std=0.84%, %>20%=0.00%
+Uniaxial u1: -0.69%, Std dev: 2.93%, %>20%: 0.31%
+Shear u1: -0.24%, Std dev: 4.22%, %>20%: 0.93%
+Point Load u1: -35.79%, Std dev: 13.85%, %>20%: 88.73%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.13%, Std dev: 7.48%, %>20%: 3.78%
+Shear u2: 0.28%, Std dev: 2.74%, %>20%: 0.08%
+Point load u2: -36.63%, Std dev: 12.91%, %>20%: 89.65%
+098
+Translation u1: Mean=-1.44%, Std=0.66%, %>20%=0.00%
+Uniaxial u1: -0.81%, Std dev: 2.91%, %>20%: 0.37%
+Shear u1: -0.20%, Std dev: 3.41%, %>20%: 0.51%
+Point Load u1: -40.53%, Std dev: 9.81%, %>20%: 87.14%
+Translation u2: -0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -2.83%, Std dev: 5.98%, %>20%: 1.83%
+Shear u2: 0.61%, Std dev: 2.83%, %>20%: 0.22%
+Point load u2: -39.94%, Std dev: 8.52%, %>20%: 88.02%
+099
+Translation u1: Mean=-1.51%, Std=0.76%, %>20%=0.00%
+Uniaxial u1: -0.65%, Std dev: 2.32%, %>20%: 0.07%
+Shear u1: -0.13%, Std dev: 2.97%, %>20%: 0.29%
+Point Load u1: -35.31%, Std dev: 10.31%, %>20%: 82.91%
+Translation u2: 0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -2.93%, Std dev: 6.60%, %>20%: 2.56%
+Shear u2: 0.66%, Std dev: 2.57%, %>20%: 0.00%
+Point load u2: -34.98%, Std dev: 9.16%, %>20%: 83.20%
+100
+Translation u1: Mean=-1.29%, Std=0.70%, %>20%=0.00%
+Uniaxial u1: -0.57%, Std dev: 4.47%, %>20%: 0.29%
+Shear u1: 0.54%, Std dev: 3.37%, %>20%: 0.51%
+Point Load u1: -32.46%, Std dev: 9.99%, %>20%: 79.55%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.84%, Std dev: 9.39%, %>20%: 3.07%
+Shear u2: 0.11%, Std dev: 4.63%, %>20%: 0.29%
+Point load u2: -33.32%, Std dev: 10.43%, %>20%: 81.15%
+101
+Translation u1: Mean=-1.40%, Std=0.87%, %>20%=0.00%
+Uniaxial u1: -0.59%, Std dev: 2.70%, %>20%: 0.22%
+Shear u1: -0.07%, Std dev: 8.24%, %>20%: 0.66%
+Point Load u1: -37.09%, Std dev: 10.71%, %>20%: 87.07%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -5.33%, Std dev: 8.27%, %>20%: 5.04%
+Shear u2: -1.17%, Std dev: 10.46%, %>20%: 0.66%
+Point load u2: -37.42%, Std dev: 12.64%, %>20%: 83.86%
+102
+Translation u1: Mean=-1.50%, Std=0.78%, %>20%=0.00%
+Uniaxial u1: -0.56%, Std dev: 2.34%, %>20%: 0.15%
+Shear u1: -0.47%, Std dev: 6.59%, %>20%: 0.58%
+Point Load u1: -26.98%, Std dev: 11.58%, %>20%: 67.93%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.32%, Std dev: 6.99%, %>20%: 2.92%
+Shear u2: 0.47%, Std dev: 4.49%, %>20%: 0.37%
+Point load u2: -28.26%, Std dev: 10.74%, %>20%: 70.71%
+103
+Translation u1: Mean=-1.83%, Std=0.95%, %>20%=0.00%
+Uniaxial u1: -0.60%, Std dev: 2.71%, %>20%: 0.07%
+Shear u1: -0.82%, Std dev: 4.97%, %>20%: 0.58%
+Point Load u1: -46.63%, Std dev: 10.96%, %>20%: 88.90%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -2.87%, Std dev: 6.25%, %>20%: 2.78%
+Shear u2: 0.07%, Std dev: 5.94%, %>20%: 0.37%
+Point load u2: -43.84%, Std dev: 9.03%, %>20%: 88.82%
+104
+Translation u1: Mean=-1.64%, Std=0.83%, %>20%=0.00%
+Uniaxial u1: -1.77%, Std dev: 8.04%, %>20%: 2.26%
+Shear u1: -0.15%, Std dev: 4.38%, %>20%: 0.73%
+Point Load u1: -37.72%, Std dev: 41.27%, %>20%: 87.87%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.07%, Std dev: 8.10%, %>20%: 3.94%
+Shear u2: 0.04%, Std dev: 5.62%, %>20%: 0.15%
+Point load u2: -36.74%, Std dev: 10.53%, %>20%: 89.04%
+105
+Translation u1: Mean=-1.18%, Std=0.66%, %>20%=0.00%
+Uniaxial u1: -0.60%, Std dev: 5.01%, %>20%: 1.16%
+Shear u1: -0.04%, Std dev: 5.26%, %>20%: 0.69%
+Point Load u1: -40.67%, Std dev: 7.39%, %>20%: 99.85%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.29%, Std dev: 7.69%, %>20%: 3.94%
+Shear u2: -0.07%, Std dev: 4.35%, %>20%: 0.08%
+Point load u2: -40.79%, Std dev: 8.57%, %>20%: 98.38%
+106
+Translation u1: Mean=-1.67%, Std=0.80%, %>20%=0.00%
+Uniaxial u1: -0.78%, Std dev: 2.71%, %>20%: 0.37%
+Shear u1: -0.04%, Std dev: 3.52%, %>20%: 0.22%
+Point Load u1: -34.24%, Std dev: 32.19%, %>20%: 81.23%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.93%, Std dev: 7.19%, %>20%: 3.51%
+Shear u2: 0.28%, Std dev: 6.26%, %>20%: 0.37%
+Point load u2: -35.09%, Std dev: 25.02%, %>20%: 83.71%
+107
+Translation u1: Mean=-1.45%, Std=0.82%, %>20%=0.00%
+Uniaxial u1: -0.27%, Std dev: 2.60%, %>20%: 0.07%
+Shear u1: -0.38%, Std dev: 3.24%, %>20%: 0.51%
+Point Load u1: -45.58%, Std dev: 16.11%, %>20%: 91.60%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.76%, Std dev: 8.77%, %>20%: 4.38%
+Shear u2: -0.04%, Std dev: 4.58%, %>20%: 0.37%
+Point load u2: -44.36%, Std dev: 13.53%, %>20%: 91.38%
+108
+Translation u1: Mean=-1.39%, Std=0.67%, %>20%=0.00%
+Uniaxial u1: -0.99%, Std dev: 3.35%, %>20%: 0.58%
+Shear u1: -0.05%, Std dev: 6.96%, %>20%: 0.51%
+Point Load u1: -30.39%, Std dev: 10.70%, %>20%: 74.43%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.04%, Std dev: 7.39%, %>20%: 3.21%
+Shear u2: 0.47%, Std dev: 3.66%, %>20%: 0.07%
+Point load u2: -31.17%, Std dev: 9.55%, %>20%: 79.11%
+109
+Translation u1: Mean=-1.25%, Std=0.65%, %>20%=0.00%
+Uniaxial u1: -0.18%, Std dev: 2.58%, %>20%: 0.22%
+Shear u1: 0.03%, Std dev: 3.74%, %>20%: 0.37%
+Point Load u1: -44.30%, Std dev: 11.15%, %>20%: 89.12%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -2.84%, Std dev: 6.40%, %>20%: 2.26%
+Shear u2: 0.47%, Std dev: 3.52%, %>20%: 0.07%
+Point load u2: -44.66%, Std dev: 19.03%, %>20%: 88.68%
+0A30
+Translation u1: Mean=-1.69%, Std=0.83%, %>20%=0.00%
+Uniaxial u1: -0.93%, Std dev: 6.34%, %>20%: 1.17%
+Shear u1: -0.46%, Std dev: 3.30%, %>20%: 0.29%
+Point Load u1: -45.81%, Std dev: 13.14%, %>20%: 99.56%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.71%, Std dev: 10.60%, %>20%: 4.53%
+Shear u2: 0.31%, Std dev: 3.28%, %>20%: 0.37%
+Point load u2: -43.89%, Std dev: 19.58%, %>20%: 98.76%
+050HM
+Translation u1: Mean=-1.41%, Std=0.73%, %>20%=0.00%
+Uniaxial u1: -0.97%, Std dev: 3.62%, %>20%: 0.69%
+Shear u1: 0.31%, Std dev: 4.03%, %>20%: 0.54%
+Point Load u1: -29.68%, Std dev: 10.37%, %>20%: 79.46%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -5.89%, Std dev: 10.25%, %>20%: 6.49%
+Shear u2: -0.23%, Std dev: 3.97%, %>20%: 0.85%
+Point load u2: -27.58%, Std dev: 11.44%, %>20%: 74.05%
+070HM
+Translation u1: Mean=-1.24%, Std=0.69%, %>20%=0.00%
+Uniaxial u1: -0.77%, Std dev: 3.26%, %>20%: 0.29%
+Shear u1: 0.45%, Std dev: 2.82%, %>20%: 0.07%
+Point Load u1: -26.04%, Std dev: 20.14%, %>20%: 65.60%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.55%, Std dev: 6.86%, %>20%: 3.29%
+Shear u2: 0.31%, Std dev: 3.32%, %>20%: 0.15%
+Point load u2: -23.78%, Std dev: 12.83%, %>20%: 60.77%
+90A30
+Translation u1: Mean=-1.69%, Std=0.83%, %>20%=0.00%
+Uniaxial u1: -1.11%, Std dev: 6.43%, %>20%: 1.17%
+Shear u1: -0.42%, Std dev: 3.20%, %>20%: 0.29%
+Point Load u1: -45.64%, Std dev: 15.97%, %>20%: 99.63%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.58%, Std dev: 10.36%, %>20%: 4.24%
+Shear u2: 0.20%, Std dev: 3.18%, %>20%: 0.44%
+Point load u2: -43.67%, Std dev: 12.93%, %>20%: 98.54%
+90T
+Translation u1: Mean=-1.17%, Std=0.64%, %>20%=0.00%
+Uniaxial u1: -0.30%, Std dev: 2.48%, %>20%: 0.22%
+Shear u1: 0.42%, Std dev: 3.17%, %>20%: 0.29%
+Point Load u1: -35.75%, Std dev: 8.84%, %>20%: 86.05%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.32%, Std dev: 7.42%, %>20%: 3.73%
+Shear u2: 0.31%, Std dev: 3.48%, %>20%: 0.37%
+Point load u2: -36.56%, Std dev: 9.55%, %>20%: 85.98%
+095HM
+Translation u1: Mean=-1.32%, Std=0.66%, %>20%=0.00%
+Uniaxial u1: -0.70%, Std dev: 2.92%, %>20%: 0.46%
+Shear u1: 0.41%, Std dev: 3.25%, %>20%: 0.46%
+Point Load u1: -29.52%, Std dev: 14.33%, %>20%: 80.85%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -4.90%, Std dev: 9.67%, %>20%: 4.40%
+Shear u2: 0.25%, Std dev: 3.28%, %>20%: 0.39%
+Point load u2: -28.91%, Std dev: 11.93%, %>20%: 76.76%
+9050HM
+Translation u1: Mean=-1.45%, Std=0.73%, %>20%=0.00%
+Uniaxial u1: -0.34%, Std dev: 2.34%, %>20%: 0.15%
+Shear u1: 0.07%, Std dev: 2.95%, %>20%: 0.08%
+Point Load u1: -41.62%, Std dev: 10.46%, %>20%: 93.98%
+Translation u2: 0.00%, Std dev: 0.02%, %>20%: 0.00%
+Uniaxial u2: -3.14%, Std dev: 6.00%, %>20%: 2.63%
+Shear u2: 0.44%, Std dev: 2.71%, %>20%: 0.08%
+Point load u2: -41.23%, Std dev: 10.45%, %>20%: 94.59%
+9070HM
+Translation u1: Mean=-1.30%, Std=0.73%, %>20%=0.00%
+Uniaxial u1: -0.37%, Std dev: 2.70%, %>20%: 0.08%
+Shear u1: 0.17%, Std dev: 3.31%, %>20%: 0.31%
+Point Load u1: -42.46%, Std dev: 10.00%, %>20%: 93.28%
+Translation u2: -0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -3.43%, Std dev: 7.14%, %>20%: 3.78%
+Shear u2: 0.47%, Std dev: 2.78%, %>20%: 0.15%
+Point load u2: -41.22%, Std dev: 9.95%, %>20%: 92.51%
+9095HM
+Translation u1: Mean=-1.24%, Std=0.71%, %>20%=0.00%
+Uniaxial u1: -0.89%, Std dev: 3.26%, %>20%: 0.46%
+Shear u1: 0.01%, Std dev: 9.25%, %>20%: 0.69%
+Point Load u1: -28.57%, Std dev: 11.93%, %>20%: 76.91%
+Translation u2: 0.00%, Std dev: 0.03%, %>20%: 0.00%
+Uniaxial u2: -5.38%, Std dev: 8.77%, %>20%: 5.64%
+Shear u2: -0.43%, Std dev: 10.02%, %>20%: 0.62%
+Point load u2: -29.52%, Std dev: 27.52%, %>20%: 76.53%
