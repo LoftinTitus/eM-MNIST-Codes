@@ -5,7 +5,7 @@ from scipy.spatial.distance import cdist
 import matplotlib.pyplot as plt
 
 # Load the sample image
-I_3D = cv2.imread("/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Sample Images/020Images/020_1_00000.jpg")
+I_3D = cv2.imread("/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Sample Images/064Images/064_12_00000.jpg")
 
 # Convert to grayscale
 if I_3D.shape[2] == 3:
@@ -15,9 +15,9 @@ else:
 
 # Apply gamma correction
 # Normalize to [0,1], apply gamma, then scale back to [0,255]
-gamma = 2
-I_gray = np.power(I_gray / 255.0, gamma) * 255.0
-I_gray = I_gray.astype(np.uint8)
+#gamma = 2
+#I_gray = np.power(I_gray / 255.0, gamma) * 255.0
+#I_gray = I_gray.astype(np.uint8)
 
 img_height = I_gray.shape[0]
 
@@ -26,7 +26,7 @@ _, I = cv2.threshold(I_gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
 I = I // 255  
 
 # Mask data is from a csv
-M_data = pd.read_csv("/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Processed DaVis Data/020_Images/020_Images0001.csv", delimiter=';').values
+M_data = pd.read_csv("/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Processed DaVis Data/064_Images/064_Images0001.csv", delimiter=';').values
 x, y = M_data[:, 0], M_data[:, 1]
 
 # Flip y coordinates to match image origin (top-left)
@@ -55,8 +55,10 @@ x_min, x_max = np.min(xs), np.max(xs)
 y_min, y_max = np.min(ys), np.max(ys)
 
 # Constrain to be within bounds so the code isnt picking up the handles
-y_min = max(y_min, 375)  
-y_max = min(y_max, 1550) 
+y_min = max(y_min, 314)  
+y_max = min(y_max, 1509) 
+x_min = max(x_min, 437)
+x_max = min(x_max, 1652)
 
 sample_coords = np.array([
     [x_min, y_min],
