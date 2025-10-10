@@ -5,7 +5,7 @@ from scipy.spatial.distance import cdist
 import matplotlib.pyplot as plt
 
 # Load the sample image
-I_3D = cv2.imread("/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Sample Images/064Images/064_12_00000.jpg")
+I_3D = cv2.imread("/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Sample Images/051Images/051_8_00000.jpg")
 
 # Convert to grayscale
 if I_3D.shape[2] == 3:
@@ -26,7 +26,7 @@ _, I = cv2.threshold(I_gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
 I = I // 255  
 
 # Mask data is from a csv
-M_data = pd.read_csv("/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Processed DaVis Data/064_Images/064_Images0001.csv", delimiter=';').values
+M_data = pd.read_csv("/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/MNIST Data Set/Processed DaVis Data/051_Images/051_Images0001.csv", delimiter=';').values
 x, y = M_data[:, 0], M_data[:, 1]
 
 # Flip y coordinates to match image origin (top-left)
@@ -55,10 +55,10 @@ x_min, x_max = np.min(xs), np.max(xs)
 y_min, y_max = np.min(ys), np.max(ys)
 
 # Constrain to be within bounds so the code isnt picking up the handles
-y_min = max(y_min, 314)  
-y_max = min(y_max, 1509) 
-x_min = max(x_min, 437)
-x_max = min(x_max, 1652)
+y_min = max(y_min, 332)  
+y_max = min(y_max, 1517) 
+x_min = max(x_min, 542)
+x_max = min(x_max, 1749)
 
 sample_coords = np.array([
     [x_min, y_min],
@@ -105,8 +105,8 @@ print("Fit %:", iou)
 # Visual
 plt.figure(figsize=(8, 8))
 plt.imshow(I_gray, cmap='gray')
-plt.plot(B_mask[:, 0], B_mask[:, 1], 'r-', label='Mask Border')
-plt.plot(B_real[:, 0], B_real[:, 1], 'g-', label='Sample Border')
+plt.plot(B_mask[:, 0], B_mask[:, 1], 'c-', label='Mask Border')
+plt.plot(B_real[:, 0], B_real[:, 1], 'b-', label='Sample Border')
 plt.title('Mask vs Sample Borders')
 plt.legend()
 plt.show()
