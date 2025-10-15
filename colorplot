@@ -1,0 +1,19 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load CSV
+P_data = pd.read_csv("/Users/tyloftin/Library/CloudStorage/Box-Box/Titus/Revision Tests/DaVis Data/four_hole DaVis/four_hole0189.csv", delimiter=';').values 
+
+# Extract columns
+x = P_data[:, 0] 
+y = P_data[:, 1] 
+strain = P_data[:, 7]  
+
+# Create scatter plot
+plt.figure(figsize=(8,6))
+sc = plt.scatter(x, y, c=strain, cmap='viridis', s=50)
+plt.colorbar(sc, label='Maximum Normal Strain')
+plt.xlabel('X (px)')
+plt.ylabel('Y (px)')
+plt.title('Maximum Normal Strain')
+plt.show()
