@@ -11,7 +11,7 @@ strain = P_data[:, 7]
 
 # Create scatter plot
 plt.figure(figsize=(8,6))
-sc = plt.scatter(x, y, c=strain, cmap='viridis', s=50)
+sc = plt.scatter(x, y, c=strain, cmap='coolwarm', s=50)
 plt.colorbar(sc, label='Maximum Normal Strain')
 plt.xlabel('X (px)')
 plt.ylabel('Y (px)')
