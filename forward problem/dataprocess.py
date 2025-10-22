@@ -17,11 +17,7 @@ def check_dic_shapes(data_dir):
 
 ## counts = check_dic_shapes("/Users/tyloftin/Downloads/MNIST_comp_files")
 ## print(counts)
-## Data is not consistent in shape, meaning I need to pad them to a common size for the FNO
-
-import numpy as np
-import cv2
-from scipy.ndimage import laplace
+## Data is not consistent in shape, meaning I need to pad them to a common size for the FNO harm
 
 def harmonic_interpolation(u, mask, n_iter=300, alpha=0.2):
     ## Physics constrained interpolation of edge effects
@@ -55,7 +51,7 @@ def resize_label(label, target_size=56):
     return cv2.resize(label, (target_size, target_size), interpolation=cv2.INTER_NEAREST)
 
 
-def preprocess_with_mechanical_interp(data, target_size=56):
+def preprocess(data, target_size=56):
 
     label_resized = resize_label(data["label"], target_size)
 
@@ -99,7 +95,7 @@ for fname in sorted(os.listdir(data_dir)):
     if not fname.endswith(".npz"):
         continue
     data = np.load(os.path.join(data_dir, fname))
-    sample = preprocess_with_mechanical_interp(data, target_size=56)
+    sample = preprocess(data, target_size=56)
     processed.append(sample)
 
 s = processed[0]
