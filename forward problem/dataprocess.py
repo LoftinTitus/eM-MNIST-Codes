@@ -2,6 +2,7 @@ import os
 import numpy as np
 import cv2
 from scipy.ndimage import laplace
+import dataload
 
 def check_dic_shapes(data_dir):
     shapes = {}
@@ -99,7 +100,7 @@ for fname in sorted(os.listdir(data_dir)):
     processed.append(sample)
 
 s = processed[0]
-frame = 50  # pick a mid-strain frame
+frame = 50 
 
 fig, axes = plt.subplots(1, 3, figsize=(12, 4))
 axes[0].imshow(s["ux_frames"][frame], cmap="RdBu")
