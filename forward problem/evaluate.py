@@ -117,7 +117,9 @@ def calculate_force_displacement_and_errors(model, val_loader, device, export_di
                 force_predictions_np = None
             
             for i in range(inputs.size(0)):
-                bc_displacement = inputs_np[i, 1, 0, 0]  # Assuming uniform bc displacement, check on this tho bc idt its right
+                bc_map = inputs_np[i, 1] 
+                
+                bc_displacement = np.mean(bc_map[0, :]) 
                 
                 true_force = forces_np[i, 0]
                 pred_force = force_predictions_np[i, 0] if force_predictions_np is not None else None
@@ -127,16 +129,23 @@ def calculate_force_displacement_and_errors(model, val_loader, device, export_di
                 pred_ux = disp_predictions_np[i, 0]
                 pred_uy = disp_predictions_np[i, 1]
                 
-                mse_ux = mean_squared_error(target_ux.flatten(), pred_ux.flatten())
-                mse_uy = mean_squared_error(target_uy.flatten(), pred_uy.flatten())
-                mae_ux = mean_absolute_error(target_ux.flatten(), pred_ux.flatten())
-                mae_uy = mean_absolute_error(target_uy.flatten(), pred_uy.flatten())
+                target_ux_corrected, target_uy_corrected = remove_rigid_body_motion(
+                    target_ux, target_uy, method='mean_subtraction'
+                )
+                pred_ux_corrected, pred_uy_corrected = remove_rigid_body_motion(
+                    pred_ux, pred_uy, method='mean_subtraction'
+                )
+                
+                mse_ux = mean_squared_error(target_ux_corrected.flatten(), pred_ux_corrected.flatten())
+                mse_uy = mean_squared_error(target_uy_corrected.flatten(), pred_uy_corrected.flatten())
+                mae_ux = mean_absolute_error(target_ux_corrected.flatten(), pred_ux_corrected.flatten())
+                mae_uy = mean_absolute_error(target_uy_corrected.flatten(), pred_uy_corrected.flatten())
                 
                 mse_total = (mse_ux + mse_uy) / 2
                 mae_total = (mae_ux + mae_uy) / 2
                 
-                target_magnitude = np.sqrt(target_ux**2 + target_uy**2)
-                pred_magnitude = np.sqrt(pred_ux**2 + pred_uy**2)
+                target_magnitude = np.sqrt(target_ux_corrected**2 + target_uy_corrected**2)
+                pred_magnitude = np.sqrt(pred_ux_corrected**2 + pred_uy_corrected**2)
                 relative_error = np.mean(np.abs(target_magnitude - pred_magnitude) / (np.abs(target_magnitude) + 1e-8))
                 
                 force_error = None
@@ -246,6 +255,59 @@ def calculate_force_displacement_and_errors(model, val_loader, device, export_di
     print("="*50)
     
     return df
+
+
+def extract_boundary_displacement(bc_map, loading_type='uniaxial_tension'):
+    height, width = bc_map.shape
+    
+    if loading_type == 'uniaxial_tension':
+
+        top_edge_disp = np.mean(bc_map[0, :])
+        return top_edge_disp
+    
+    else:
+        # use maximum absolute displacement
+        return bc_map[np.unravel_index(np.argmax(np.abs(bc_map)), bc_map.shape)]
+
+
+def remove_rigid_body_motion(ux, uy, method='mean_subtraction'):
+    if method == 'mean_subtraction':
+        ux_corrected = ux - np.mean(ux)
+        uy_corrected = uy - np.mean(uy)
+        
+    elif method == 'corner_reference':
+        ux_corrected = ux - ux[0, 0]
+        uy_corrected = uy - uy[0, 0]
+        
+    elif method == 'least_squares':
+        h, w = ux.shape
+        y_coords, x_coords = np.mgrid[0:h, 0:w]
+        
+        ux_flat = ux.flatten()
+        uy_flat = uy.flatten()
+        x_flat = x_coords.flatten()
+        y_flat = y_coords.flatten()
+        
+        A = np.column_stack([np.ones_like(x_flat), x_flat, y_flat])
+    
+        try:
+            params_x = np.linalg.lstsq(A, ux_flat, rcond=None)[0]
+            params_y = np.linalg.lstsq(A, uy_flat, rcond=None)[0]
+            
+            rigid_ux = (A @ params_x).reshape(h, w)
+            rigid_uy = (A @ params_y).reshape(h, w)
+            
+            ux_corrected = ux - rigid_ux
+            uy_corrected = uy - rigid_uy
+        except:
+            ux_corrected = ux - np.mean(ux)
+            uy_corrected = uy - np.mean(uy)
+    
+    else:
+        ux_corrected = ux.copy()
+        uy_corrected = uy.copy()
+    
+    return ux_corrected, uy_corrected
 
 
 if __name__ == "__main__":
