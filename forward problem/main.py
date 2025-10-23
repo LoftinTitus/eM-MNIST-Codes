@@ -12,7 +12,8 @@ import dataprocess
 import dataform
 from fno_model import FNO2d
 from dataset import create_dataloaders
-from train import Trainer, load_checkpoint
+from train import Trainer
+from evaluate import calculate_force_displacement_and_errors
 
 
 def main():
@@ -84,7 +85,8 @@ def main():
         modes2=MODES2,
         width=WIDTH,
         in_channels=2,   # material_mask + bc_disp
-        out_channels=2   # ux + uy
+        out_channels=2,   # ux + uy
+        predict_force=True  # Enable force prediction
     )
 
     total_params = sum(p.numel() for p in model.parameters())
@@ -97,7 +99,9 @@ def main():
     trainer.train(num_epochs=NUM_EPOCHS)
     
     trainer.plot_losses()
-    
+
+    print("\nCalculating force-displacement curves and error metrics:")
+    results_df = calculate_force_displacement_and_errors(model, val_loader, DEVICE)
     
     print("Testing prediction:")
     model.eval()
@@ -106,31 +110,69 @@ def main():
         sample_input, sample_target, sample_force = next(iter(val_loader))
         sample_input = sample_input[:1].to(DEVICE) 
         sample_target = sample_target[:1]
+        sample_force = sample_force[:1]
         
-        prediction = model(sample_input).cpu()
+        # Get predictions
+        if model.predict_force:
+            disp_prediction, force_prediction = model(sample_input)
+            disp_prediction = disp_prediction.cpu()
+            force_prediction = force_prediction.cpu()
+        else:
+            disp_prediction = model(sample_input).cpu()
+            force_prediction = None
         
-        fig, axes = plt.subplots(2, 3, figsize=(15, 10))
+        # Create visualization
+        if force_prediction is not None:
+            fig, axes = plt.subplots(2, 4, figsize=(20, 10))
+        else:
+            fig, axes = plt.subplots(2, 3, figsize=(15, 10))
         
-        
+        # Input visualizations
         axes[0, 0].imshow(sample_input[0, 0].cpu(), cmap='gray')
         axes[0, 0].set_title('Material Mask')
         axes[1, 0].imshow(sample_input[0, 1].cpu(), cmap='viridis')
         axes[1, 0].set_title('BC Displacement')
         
-        
+        # Target displacement fields
         axes[0, 1].imshow(sample_target[0, 0], cmap='RdBu')
         axes[0, 1].set_title('Target ux')
         axes[1, 1].imshow(sample_target[0, 1], cmap='RdBu')
         axes[1, 1].set_title('Target uy')
         
-        
-        axes[0, 2].imshow(prediction[0, 0], cmap='RdBu')
+        # Predicted displacement fields
+        axes[0, 2].imshow(disp_prediction[0, 0], cmap='RdBu')
         axes[0, 2].set_title('Predicted ux')
-        axes[1, 2].imshow(prediction[0, 1], cmap='RdBu')
+        axes[1, 2].imshow(disp_prediction[0, 1], cmap='RdBu')
         axes[1, 2].set_title('Predicted uy')
         
+        # Force comparison (if available)
+        if force_prediction is not None:
+            true_force = sample_force[0, 0].item()
+            pred_force = force_prediction[0, 0].item()
+            
+            axes[0, 3].bar(['True', 'Predicted'], [true_force, pred_force], 
+                          color=['blue', 'red'], alpha=0.7)
+            axes[0, 3].set_title('Force Comparison')
+            axes[0, 3].set_ylabel('Force')
+            
+            # Force error
+            force_error = abs(true_force - pred_force)
+            force_rel_error = force_error / (abs(true_force) + 1e-8) * 100
+            
+            axes[1, 3].text(0.5, 0.7, f'True Force: {true_force:.6f}', 
+                           ha='center', va='center', transform=axes[1, 3].transAxes, fontsize=12)
+            axes[1, 3].text(0.5, 0.5, f'Pred Force: {pred_force:.6f}', 
+                           ha='center', va='center', transform=axes[1, 3].transAxes, fontsize=12)
+            axes[1, 3].text(0.5, 0.3, f'Error: {force_error:.6f}', 
+                           ha='center', va='center', transform=axes[1, 3].transAxes, fontsize=12)
+            axes[1, 3].text(0.5, 0.1, f'Rel Error: {force_rel_error:.2f}%', 
+                           ha='center', va='center', transform=axes[1, 3].transAxes, fontsize=12)
+            axes[1, 3].set_title('Force Metrics')
+            axes[1, 3].axis('off')
+        
         for ax in axes.flat:
-            ax.axis('off')
+            if ax != axes[1, 3] or force_prediction is None:  # Don't turn off axis for text display
+                ax.axis('off')
         
         plt.tight_layout()
         plt.show()

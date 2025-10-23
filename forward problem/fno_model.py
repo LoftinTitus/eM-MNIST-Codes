@@ -38,12 +38,13 @@ class SpectralConv2d(nn.Module):
 
 
 class FNO2d(nn.Module):
-    def __init__(self, modes1, modes2, width=64, in_channels=2, out_channels=2):
+    def __init__(self, modes1, modes2, width=64, in_channels=2, out_channels=2, predict_force=False):
         super(FNO2d, self).__init__()
         
         self.modes1 = modes1
         self.modes2 = modes2
         self.width = width
+        self.predict_force = predict_force
         
         self.fc0 = nn.Linear(in_channels, self.width)
         
@@ -59,15 +60,21 @@ class FNO2d(nn.Module):
         self.w2 = nn.Conv2d(self.width, self.width, 1)
         self.w3 = nn.Conv2d(self.width, self.width, 1)
         
-        # Output projection
+        # Output projection for displacement fields
         self.fc1 = nn.Linear(self.width, 128)
         self.fc2 = nn.Linear(128, out_channels)
+        
+        # Force prediction branch
+        if self.predict_force:
+            self.force_pool = nn.AdaptiveAvgPool2d(1) 
+            self.force_fc1 = nn.Linear(self.width, 64)
+            self.force_fc2 = nn.Linear(64, 32)
+            self.force_fc3 = nn.Linear(32, 1) 
 
     def forward(self, x):
-        # x shape: (batch, channels, height, width)
-        x = x.permute(0, 2, 3, 1)  # (batch, height, width, channels)
+        x = x.permute(0, 2, 3, 1)  
         x = self.fc0(x)
-        x = x.permute(0, 3, 1, 2)  # (batch, channels, height, width)
+        x = x.permute(0, 3, 1, 2)
 
         x1 = self.conv0(x)
         x2 = self.w0(x)
@@ -88,10 +95,20 @@ class FNO2d(nn.Module):
         x2 = self.w3(x)
         x = x1 + x2
 
-        x = x.permute(0, 2, 3, 1)  # (batch, height, width, channels)
-        x = self.fc1(x)
-        x = F.gelu(x)
-        x = self.fc2(x)
-        x = x.permute(0, 3, 1, 2)  # (batch, channels, height, width)
+        # Displacement field prediction
+        disp_x = x.permute(0, 2, 3, 1)  
+        disp_x = self.fc1(disp_x)
+        disp_x = F.gelu(disp_x)
+        disp_x = self.fc2(disp_x)
+        disp_x = disp_x.permute(0, 3, 1, 2) 
         
-        return x
+        if self.predict_force:
+            force_x = self.force_pool(x)
+            force_x = force_x.view(force_x.size(0), -1)
+            force_x = F.gelu(self.force_fc1(force_x))
+            force_x = F.gelu(self.force_fc2(force_x))
+            force_x = self.force_fc3(force_x) 
+            
+            return disp_x, force_x
+        else:
+            return disp_x

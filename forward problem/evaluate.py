@@ -1,6 +1,9 @@
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
+import os
+from sklearn.metrics import mean_squared_error, mean_absolute_error
 from fno_model import FNO2d
 from train import load_checkpoint
 
@@ -68,10 +71,8 @@ def compute_metrics(predictions, targets):
     rmse = np.sqrt(mse)
     mae = np.mean(np.abs(predictions - targets))
     
-    # Relative error
     rel_error = np.mean(np.abs(predictions - targets) / (np.abs(targets) + 1e-8))
     
-    # R-squared
     ss_res = np.sum((targets - predictions) ** 2)
     ss_tot = np.sum((targets - np.mean(targets)) ** 2)
     r2 = 1 - (ss_res / (ss_tot + 1e-8))
@@ -83,6 +84,168 @@ def compute_metrics(predictions, targets):
         'Relative Error': rel_error,
         'R²': r2
     }
+
+
+def calculate_force_displacement_and_errors(model, val_loader, device, export_dir="exports"):
+    os.makedirs(export_dir, exist_ok=True)
+    
+    model.eval()
+    all_results = []
+    
+    print("Calculating force-displacement curves and errors:")
+    
+    with torch.no_grad():
+        for batch_idx, (inputs, targets, forces) in enumerate(val_loader):
+            inputs = inputs.to(device)
+            targets = targets.to(device)
+            forces = forces.to(device)
+            
+            if hasattr(model, 'predict_force') and model.predict_force:
+                disp_predictions, force_predictions = model(inputs)
+            else:
+                disp_predictions = model(inputs)
+                force_predictions = None
+            
+            inputs_np = inputs.cpu().numpy()
+            targets_np = targets.cpu().numpy()
+            disp_predictions_np = disp_predictions.cpu().numpy()
+            forces_np = forces.cpu().numpy()
+            
+            if force_predictions is not None:
+                force_predictions_np = force_predictions.cpu().numpy()
+            else:
+                force_predictions_np = None
+            
+            for i in range(inputs.size(0)):
+                bc_displacement = inputs_np[i, 1, 0, 0]  # Assuming uniform bc displacement, check on this tho bc idt its right
+                
+                true_force = forces_np[i, 0]
+                pred_force = force_predictions_np[i, 0] if force_predictions_np is not None else None
+                
+                target_ux = targets_np[i, 0]
+                target_uy = targets_np[i, 1]
+                pred_ux = disp_predictions_np[i, 0]
+                pred_uy = disp_predictions_np[i, 1]
+                
+                mse_ux = mean_squared_error(target_ux.flatten(), pred_ux.flatten())
+                mse_uy = mean_squared_error(target_uy.flatten(), pred_uy.flatten())
+                mae_ux = mean_absolute_error(target_ux.flatten(), pred_ux.flatten())
+                mae_uy = mean_absolute_error(target_uy.flatten(), pred_uy.flatten())
+                
+                mse_total = (mse_ux + mse_uy) / 2
+                mae_total = (mae_ux + mae_uy) / 2
+                
+                target_magnitude = np.sqrt(target_ux**2 + target_uy**2)
+                pred_magnitude = np.sqrt(pred_ux**2 + pred_uy**2)
+                relative_error = np.mean(np.abs(target_magnitude - pred_magnitude) / (np.abs(target_magnitude) + 1e-8))
+                
+                force_error = None
+                force_relative_error = None
+                if pred_force is not None:
+                    force_error = abs(true_force - pred_force)
+                    force_relative_error = abs(true_force - pred_force) / (abs(true_force) + 1e-8)
+                
+                result_dict = {
+                    'batch_idx': batch_idx,
+                    'sample_idx': i,
+                    'displacement': bc_displacement,
+                    'true_force': true_force,
+                    'predicted_force': pred_force if pred_force is not None else np.nan,
+                    'force_error': force_error if force_error is not None else np.nan,
+                    'force_relative_error': force_relative_error if force_relative_error is not None else np.nan,
+                    'mse_ux': mse_ux,
+                    'mse_uy': mse_uy,
+                    'mse_total': mse_total,
+                    'mae_ux': mae_ux,
+                    'mae_uy': mae_uy,
+                    'mae_total': mae_total,
+                    'relative_error': relative_error
+                }
+                
+                all_results.append(result_dict)
+    
+    df = pd.DataFrame(all_results)
+    
+    df = df.sort_values('displacement')
+    
+    force_disp_file = os.path.join(export_dir, 'force_displacement_curve.csv')
+    error_metrics_file = os.path.join(export_dir, 'error_metrics.csv')
+    
+    if 'predicted_force' in df.columns and not df['predicted_force'].isna().all():
+        df[['displacement', 'true_force', 'predicted_force']].to_csv(force_disp_file, index=False)
+    else:
+        df[['displacement', 'true_force']].to_csv(force_disp_file, index=False)
+    
+    # All data including errors
+    df.to_csv(error_metrics_file, index=False)
+    
+    print(f"Force-displacement curve exported to: {force_disp_file}")
+    print(f"Error metrics exported to: {error_metrics_file}")
+    
+    plt.figure(figsize=(12, 8))
+    
+    plt.subplot(2, 2, 1)
+    plt.plot(df['displacement'], df['true_force'], 'b-', linewidth=2, label='True Force')
+    if 'predicted_force' in df.columns and not df['predicted_force'].isna().all():
+        plt.plot(df['displacement'], df['predicted_force'], 'r--', linewidth=2, label='Predicted Force')
+    plt.xlabel('Displacement')
+    plt.ylabel('Force')
+    plt.title('Force-Displacement Curve')
+    plt.grid(True, alpha=0.3)
+    plt.legend()
+    
+    if 'predicted_force' in df.columns and not df['predicted_force'].isna().all():
+        plt.subplot(2, 2, 2)
+        plt.plot(df['displacement'], df['force_error'], 'g-', linewidth=2)
+        plt.xlabel('Displacement')
+        plt.ylabel('Force Error')
+        plt.title('Force Prediction Error vs Displacement')
+        plt.grid(True, alpha=0.3)
+        
+        plt.subplot(2, 2, 3)
+        plt.scatter(df['true_force'], df['predicted_force'], alpha=0.6, c='purple')
+        min_force = min(df['true_force'].min(), df['predicted_force'].min())
+        max_force = max(df['true_force'].max(), df['predicted_force'].max())
+        plt.plot([min_force, max_force], [min_force, max_force], 'k--', alpha=0.5)
+        plt.xlabel('True Force')
+        plt.ylabel('Predicted Force')
+        plt.title('Force Prediction Accuracy')
+        plt.grid(True, alpha=0.3)
+    
+    plt.subplot(2, 2, 4)
+    plt.plot(df['displacement'], df['mse_total'], 'orange', linewidth=2)
+    plt.xlabel('Displacement')
+    plt.ylabel('MSE Total')
+    plt.title('Displacement Prediction Error')
+    plt.grid(True, alpha=0.3)
+    
+    plt.tight_layout()
+    
+    plot_file = os.path.join(export_dir, 'force_displacement_analysis.png')
+    plt.savefig(plot_file, dpi=300, bbox_inches='tight')
+    plt.show()
+    print(f"Analysis plot saved to: {plot_file}")
+    
+    print("\n" + "="*50)
+    print("SUMMARY STATISTICS")
+    print("="*50)
+    print(f"Total samples analyzed: {len(df)}")
+    print(f"Displacement range: {df['displacement'].min():.6f} to {df['displacement'].max():.6f}")
+    print(f"True force range: {df['true_force'].min():.6f} to {df['true_force'].max():.6f}")
+    
+    if 'predicted_force' in df.columns and not df['predicted_force'].isna().all():
+        print(f"Predicted force range: {df['predicted_force'].min():.6f} to {df['predicted_force'].max():.6f}")
+        print(f"Average force error: {df['force_error'].mean():.6f} ± {df['force_error'].std():.6f}")
+        print(f"Average force relative error: {df['force_relative_error'].mean():.6f} ± {df['force_relative_error'].std():.6f}")
+    else:
+        print("Force prediction was not enabled")
+    
+    print(f"Average displacement MSE: {df['mse_total'].mean():.6f} ± {df['mse_total'].std():.6f}")
+    print(f"Average displacement MAE: {df['mae_total'].mean():.6f} ± {df['mae_total'].std():.6f}")
+    print(f"Average displacement relative error: {df['relative_error'].mean():.6f} ± {df['relative_error'].std():.6f}")
+    print("="*50)
+    
+    return df
 
 
 if __name__ == "__main__":
