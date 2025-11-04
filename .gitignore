@@ -1,1 +1,11 @@
 checkpoints/*.pt
+forward problem/cnn_model.py
+forward problem/checkpoints/best_model.pt
+forward problem/checkpoints/checkpoint_epoch_10.pt
+forward problem/checkpoints/checkpoint_epoch_20.pt
+forward problem/checkpoints/checkpoint_epoch_30.pt
+forward problem/checkpoints/checkpoint_epoch_40.pt
+forward problem/checkpoints/checkpoint_epoch_50.pt
+forward problem/checkpoints/checkpoint_epoch_60.pt
+forward problem/checkpoints/checkpoint_epoch_70.pt
+forward problem/__pycache__/cnn_model.cpython-313.pyc
