@@ -1,0 +1,11 @@
+Metric,Value
+Global Accuracy,0.9963010204081633
+Global Mean IoU,0.9849651860041146
+Mean Sample Accuracy,0.9963010204081633
+Std Sample Accuracy,0.0058402490935933905
+Mean Sample IoU,0.9944878698457289
+Std Sample IoU,0.009146759294259697
+Min Sample Accuracy,0.9846938775510204
+Max Sample Accuracy,1.0
+Min Sample IoU,0.9762376237623762
+Max Sample IoU,1.0
