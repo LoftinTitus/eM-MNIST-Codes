@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-# Local inverse problem imports
 from dataform_inverse import normalize_inverse, build_inverse_dataset, build_material_property_dataset
 from inverse_models import InverseUNet
 from dataset_inverse import create_inverse_dataloaders, analyze_dataset_statistics
@@ -16,15 +15,13 @@ import dataprocess
 
 
 def main():
-    # Configuration - CNN/UNet specific
     DATA_DIR = "/Users/tyloftin/Downloads/MNIST_comp_files"
     TARGET_SIZE = 56
-    BATCH_SIZE = 16  # Can use larger batch for CNN
-    LEARNING_RATE = 1e-3  # Slightly higher LR for CNN
-    NUM_EPOCHS = 75      # Fewer epochs
+    BATCH_SIZE = 16 
+    LEARNING_RATE = 1e-3 
+    NUM_EPOCHS = 75  
     DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
     
-    # UNet-specific parameters
     NUM_MATERIALS = 3
     PREDICT_PROPERTIES = False
     BILINEAR = True  # Use bilinear upsampling
@@ -53,7 +50,6 @@ def main():
     
     for i, raw_data in enumerate(raw_samples):
         try:
-            # Progress indicator
             if (i + 1) % 10 == 0 or i == 0:
                 print(f"  Processing sample {i+1}/{total_samples}...")
             
@@ -71,7 +67,7 @@ def main():
             processed_samples.append(processed)
             
         except Exception as e:
-            print(f"  ⚠️  Error processing sample {i}: {e}")
+            print(f"  Error processing sample {i}: {e}")
             continue
     
     print(f"Successfully processed {len(processed_samples)} samples")
@@ -89,31 +85,25 @@ def main():
         print(f"  Y_seg (material masks): {Y_seg.shape}")
         print(f"  BC (boundary conditions): {BC.shape}")
     
-    # Analyze dataset
     print("Analyzing dataset:")
     analyze_dataset_statistics(X, Y_seg, Y_prop)
     
-    # Fix material labels - remap to contiguous indices  
     print("Remapping material labels to contiguous indices")
     unique_labels = torch.unique(Y_seg).tolist()
     print(f"  Original unique labels: {unique_labels}")
     
-    # Create mapping from original labels to contiguous 0,1,2,3,4,5...
     label_mapping = {old_label: new_label for new_label, old_label in enumerate(unique_labels)}
     print(f"  Label mapping: {label_mapping}")
     
-    # Apply remapping
     Y_seg_remapped = torch.zeros_like(Y_seg)
     for old_label, new_label in label_mapping.items():
         Y_seg_remapped[Y_seg == old_label] = new_label
     
     Y_seg = Y_seg_remapped
     
-    # Update NUM_MATERIALS based on actual data
     NUM_MATERIALS = len(unique_labels)
     print(f"  Updated NUM_MATERIALS to: {NUM_MATERIALS}")
     
-    # Verify remapping worked
     new_unique = torch.unique(Y_seg).tolist()
     assert new_unique == list(range(NUM_MATERIALS)), f"Remapping failed: {new_unique} != {list(range(NUM_MATERIALS))}"
     
@@ -128,13 +118,12 @@ def main():
     
     print("Initializing U-Net model:")
     model = InverseUNet(
-        n_channels=3,  # ux, uy, force
+        n_channels=3,  
         n_classes=NUM_MATERIALS,
         predict_properties=PREDICT_PROPERTIES,
         bilinear=BILINEAR
     )
     
-    # Count parameters
     total_params = sum(p.numel() for p in model.parameters())
     trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"Total parameters: {total_params:,}")
@@ -152,10 +141,33 @@ def main():
         prop_weight=0.1 if PREDICT_PROPERTIES else 0.0
     )
     
-    # Start training
     trainer.train(num_epochs=NUM_EPOCHS)
     
-    # Plot training losses (similar to forward problem)
+    print("\nSaving final U-Net model...")
+    final_model_path = "../checkpoints/best_inverse_unet_model.pt"
+    os.makedirs(os.path.dirname(final_model_path), exist_ok=True)
+    torch.save({
+        'model_state_dict': model.state_dict(),
+        'model_type': 'InverseUNet',
+        'config': {
+            'n_channels': 3,
+            'n_classes': NUM_MATERIALS,
+            'predict_properties': PREDICT_PROPERTIES,
+            'bilinear': BILINEAR
+        },
+        'training_config': {
+            'batch_size': BATCH_SIZE,
+            'learning_rate': LEARNING_RATE,
+            'num_epochs': NUM_EPOCHS,
+            'target_size': TARGET_SIZE
+        },
+        'train_losses': trainer.train_losses,
+        'val_losses': trainer.val_losses,
+        'best_val_loss': trainer.best_val_loss
+    }, final_model_path)
+    
+    print(f"✓ Final U-Net model saved to: {final_model_path}")
+    
     trainer.plot_training_history()
     
     print("\nCalculating material identification metrics and error analysis:")
@@ -202,17 +214,14 @@ def evaluate_unet_model(model, test_loader, device, num_materials, predict_prope
                 
                 seg_output = model(inputs)
             
-            # Get predictions
             seg_predictions = torch.argmax(seg_output, dim=1)
             
             all_predictions.append(seg_predictions.cpu())
             all_targets.append(seg_targets.cpu())
     
-    # Concatenate all results
     all_predictions = torch.cat(all_predictions, dim=0)
     all_targets = torch.cat(all_targets, dim=0)
     
-    # Calculate segmentation metrics
     from train_inverse import calculate_segmentation_metrics
     seg_metrics = calculate_segmentation_metrics(all_predictions, all_targets, num_materials)
     
@@ -222,12 +231,10 @@ def evaluate_unet_model(model, test_loader, device, num_materials, predict_prope
         'class_metrics': seg_metrics['class_metrics']
     }
     
-    # Calculate property metrics if applicable
     if predict_properties and all_prop_predictions:
         all_prop_predictions = torch.cat(all_prop_predictions, dim=0)
         all_prop_targets = torch.cat(all_prop_targets, dim=0)
         
-        # Calculate MSE for properties
         prop_mse = torch.mean((all_prop_predictions - all_prop_targets) ** 2)
         results['property_mse'] = prop_mse.item()
     
@@ -241,45 +248,40 @@ def visualize_predictions(model, test_loader, device, num_samples=5, save_path="
     
     os.makedirs(save_path, exist_ok=True)
     
-    # Material colormap - support up to 6 materials (dynamic)
-    colors = ['black', 'red', 'blue', 'green', 'yellow', 'orange']  # 6 materials
-    
-    # Get number of materials from model
     num_materials = model.n_classes if hasattr(model, 'n_classes') else 3
-    cmap = ListedColormap(colors[:num_materials])
+
+    colors = ['black', 'red', 'blue', 'green', 'yellow', 'orange'][:num_materials]
+    cmap = ListedColormap(colors)
     
     model.eval()
     with torch.no_grad():
-        # Get a batch of test data
+
         test_batch = next(iter(test_loader))
         inputs, targets = test_batch
         inputs = inputs[:num_samples].to(device)
         targets = targets[:num_samples]
         
-        # Get predictions
         outputs = model(inputs)
         predictions = torch.argmax(outputs, dim=1).cpu().numpy()
         targets = targets.numpy()
         inputs_cpu = inputs.cpu().numpy()
         
-        # Create visualization
         fig, axes = plt.subplots(4, num_samples, figsize=(4*num_samples, 16))
         if num_samples == 1:
             axes = axes.reshape(-1, 1)
         
         for i in range(num_samples):
-            # Input displacement magnitude
             ux, uy = inputs_cpu[i, 0], inputs_cpu[i, 1]
             disp_mag = np.sqrt(ux**2 + uy**2)
             
-            im1 = axes[0, i].imshow(disp_mag, cmap='viridis')
+            im1 = axes[0, i].imshow(disp_mag, cmap='RdBu')  # Red-Blue colormap like forward problem
             axes[0, i].set_title(f'Sample {i+1}: Input Displacement')
             axes[0, i].axis('off')
             plt.colorbar(im1, ax=axes[0, i], fraction=0.046, pad=0.04)
             
             # Input force field
             force_field = inputs_cpu[i, 2]
-            im2 = axes[1, i].imshow(force_field, cmap='plasma')
+            im2 = axes[1, i].imshow(force_field, cmap='RdBu')  # Red-Blue colormap like forward problem
             axes[1, i].set_title(f'Input Force Field')
             axes[1, i].axis('off')
             plt.colorbar(im2, ax=axes[1, i], fraction=0.046, pad=0.04)
@@ -301,23 +303,19 @@ def visualize_predictions(model, test_loader, device, num_samples=5, save_path="
                     dpi=300, bbox_inches='tight')
         plt.show()
         
-        # Create individual sample comparisons
         for i in range(min(3, num_samples)):
             fig, axes = plt.subplots(1, 3, figsize=(15, 5))
             
-            # Input
             disp_mag = np.sqrt(inputs_cpu[i, 0]**2 + inputs_cpu[i, 1]**2)
-            im1 = axes[0].imshow(disp_mag, cmap='viridis')
+            im1 = axes[0].imshow(disp_mag, cmap='RdBu') 
             axes[0].set_title('Input: Displacement Magnitude')
             axes[0].axis('off')
             plt.colorbar(im1, ax=axes[0])
             
-            # Ground truth
             axes[1].imshow(targets[i], cmap=cmap, vmin=0, vmax=num_materials-1)
             axes[1].set_title('Ground Truth Material')
             axes[1].axis('off')
             
-            # Prediction
             axes[2].imshow(predictions[i], cmap=cmap, vmin=0, vmax=num_materials-1)
             accuracy = np.mean(targets[i] == predictions[i])
             axes[2].set_title(f'U-Net Prediction (Acc: {accuracy:.3f})')
@@ -331,7 +329,6 @@ def visualize_predictions(model, test_loader, device, num_samples=5, save_path="
         
         print(f"U-Net prediction visualizations saved to: {save_path}")
         
-        # Save prediction data for analysis
         prediction_data = {
             'inputs': inputs_cpu,
             'targets': targets,

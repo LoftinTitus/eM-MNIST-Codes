@@ -4,17 +4,12 @@ import torch.nn.functional as F
 from torch.nn.parameter import Parameter
 import numpy as np
 
-
-################################################################
-# Inverse FNO Model - Modified for Material Identification
-################################################################
-
 class SpectralConv2d(nn.Module):
     def __init__(self, in_channels, out_channels, modes1, modes2):
         super(SpectralConv2d, self).__init__()
         self.in_channels = in_channels
         self.out_channels = out_channels
-        self.modes1 = modes1  # Number of Fourier modes to multiply, at most floor(N/2) + 1
+        self.modes1 = modes1  
         self.modes2 = modes2
 
         self.scale = (1 / (in_channels * out_channels))

@@ -203,9 +203,21 @@ class InverseTrainer:
             'scheduler_state_dict': self.scheduler.state_dict(),
             'train_losses': self.train_losses,
             'val_losses': self.val_losses,
-            'best_val_loss': self.best_val_loss
+            'train_seg_losses': self.train_seg_losses,
+            'val_seg_losses': self.val_seg_losses,
+            'best_val_loss': self.best_val_loss,
+            'predict_properties': self.predict_properties,
+            'seg_weight': self.seg_weight,
+            'prop_weight': self.prop_weight
         }
+        
+        # Add property losses if applicable
+        if self.predict_properties and hasattr(self, 'train_prop_losses'):
+            checkpoint['train_prop_losses'] = self.train_prop_losses
+            checkpoint['val_prop_losses'] = self.val_prop_losses
+        
         torch.save(checkpoint, path)
+        print(f"✓ Checkpoint saved: {os.path.basename(path)}")
     
     def plot_training_history(self):
         """Plot training history"""
