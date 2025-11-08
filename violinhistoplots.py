@@ -106,9 +106,9 @@ def create_error_violin_plot(csv_file='Raw Speckle Quality.errors.csv', output_f
             line.set_alpha(0.9)
     
 
-    plt.ylabel('Error %', fontsize=22, fontweight='bold', labelpad=16)
+    # Use axis label/font styling consistent with the histo plots
+    plt.ylabel('Error %', fontsize=20, fontweight='normal', labelpad=10)
     ax.tick_params(axis='x', labelsize=15)
-
     ax.tick_params(axis='y', labelsize=15)
     
     # Rotate x-axis labels for better readability
@@ -121,20 +121,22 @@ def create_error_violin_plot(csv_file='Raw Speckle Quality.errors.csv', output_f
     for side in ['top', 'right']:
         ax.spines[side].set_visible(False)
 
-    # Thicken remaining spines (left and bottom)
-    ax.spines['left'].set_linewidth(2.5)
-    ax.spines['bottom'].set_linewidth(2.5)
+    # Ensure bottom and left spines are visible and set to same thickness as histo
+    ax.spines['left'].set_linewidth(1.0)
+    ax.spines['bottom'].set_linewidth(1.0)
     ax.spines['left'].set_color('black')
     ax.spines['bottom'].set_color('black')
 
-    # Ensure ticks appear only on left and bottom
+    # Ensure ticks appear only on bottom and left and point outwards
+    ax.xaxis.set_ticks_position('bottom')
     ax.yaxis.set_ticks_position('left')
+    ax.tick_params(which='both', direction='out')
 
-    # Add minor ticks and make ticks point outside
+    # Add minor ticks (keeps visual consistency)
     ax.xaxis.set_minor_locator(AutoMinorLocator())
     ax.yaxis.set_minor_locator(AutoMinorLocator())
 
-    # Disable top/right ticks
+    # Disable top/right ticks explicitly
     ax.tick_params(axis='x', which='both', top=False)
     ax.tick_params(axis='y', which='both', right=False)
     
