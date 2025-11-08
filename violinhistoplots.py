@@ -107,9 +107,9 @@ def create_error_violin_plot(csv_file='Raw Speckle Quality.errors.csv', output_f
     
 
     # Use axis label/font styling consistent with the histo plots
-    plt.ylabel('Error %', fontsize=20, fontweight='normal', labelpad=10)
-    ax.tick_params(axis='x', labelsize=15)
-    ax.tick_params(axis='y', labelsize=15)
+    plt.ylabel('Error %', fontsize=25, fontweight='normal', labelpad=10)
+    ax.tick_params(axis='x', labelsize=25)
+    ax.tick_params(axis='y', labelsize=25)
     
     # Rotate x-axis labels for better readability
     plt.xticks(rotation=45, ha='right')
