@@ -145,4 +145,65 @@ if __name__ == '__main__':
         mp = np.nanmean(p20s)
         print(f"{display}: Mean of means = {mm:.2f}%, Mean of stds = {ms:.2f}%, Mean of %>20 = {mp:.2f}%")
 
-    print()
+    # --- New: Write per-sample errors to CSV ---
+    # We'll parse the file again, but this time keep track of sample numbers
+    def parse_per_sample(path):
+        """Parse the text file and return a list of dicts: one per sample/category."""
+        rows = []
+        current_sample = None
+        with open(path, 'r', encoding='utf-8') as f:
+            for raw in f:
+                line = raw.strip()
+                if not line:
+                    continue
+                m = sample_re.match(line)
+                if m and len(line) <= 10 and ':' not in line:
+                    current_sample = m.group(1)
+                    continue
+                if ':' in line and current_sample is not None:
+                    cat, rest = line.split(':', 1)
+                    key = cat.strip().lower().replace(' ', '_')
+                    m_mean = mean_re.search(rest)
+                    m_std = std_re.search(rest)
+                    m_p20 = p20_re.search(rest)
+                    if m_mean and m_std and m_p20:
+                        try:
+                            mean_val = float(m_mean.group(1))
+                            std_val = float(m_std.group(1))
+                            p20_val = float(m_p20.group(1))
+                        except ValueError:
+                            continue
+                    else:
+                        nums = [n for n in num_re.findall(rest) if n != '20']
+                        if len(nums) < 3:
+                            continue
+                        try:
+                            mean_val = float(nums[0])
+                            std_val = float(nums[1])
+                            p20_val = float(nums[2])
+                        except ValueError:
+                            continue
+                    rows.append({
+                        'sample': current_sample,
+                        'category': key,
+                        'mean': mean_val,
+                        'std': std_val,
+                        'p20': p20_val
+                    })
+        return rows
+
+    per_sample_rows = parse_per_sample(str(txt_path))
+    if per_sample_rows:
+        df = pd.DataFrame(per_sample_rows)
+        # Aggregate duplicates by averaging for each (sample, category)
+        df_agg = df.groupby(['sample', 'category'], as_index=False).mean(numeric_only=True)
+        # Pivot so each row is a sample, columns are category_errorType (e.g. translation_u1_mean)
+        pivot_df = df_agg.pivot(index='sample', columns='category', values=['mean', 'std', 'p20'])
+        # Flatten MultiIndex columns
+        pivot_df.columns = [f"{cat}_{err}" for err, cat in pivot_df.columns]
+        pivot_df = pivot_df.reset_index()
+        csv_path = txt_path.with_suffix('.errors.csv')
+        pivot_df.to_csv(csv_path, index=False)
+        print(f"\nWrote per-sample errors to: {csv_path}")
+    else:
+        print("\nNo per-sample data found to write to CSV.")
