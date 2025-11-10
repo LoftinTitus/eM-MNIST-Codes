@@ -50,13 +50,12 @@ palette = sns.color_palette()
 if true_col:
     ax.plot(x, df[true_col].values, label='True Force', color=palette[0], linewidth=2)
 if cnn_col:
-    ax.plot(x, df[cnn_col].values, label='CNN Predicted', color='#E56E94', linewidth=2)
+    ax.plot(x, df[cnn_col].values, label='CNN Prediction', color='#E56E94', linewidth=2)
 if fno_col:
-    ax.plot(x, df[fno_col].values, label='FNO Predicted', color=palette[1], linewidth=2)
+    ax.plot(x, df[fno_col].values, label='FNO Prediction', color=palette[1], linewidth=2)
 
-ax.set_xlabel(disp_col)
-ax.set_ylabel('Force')
-ax.set_title(f'Force-Displacement Curve — {csv_path.name}')
+ax.set_xlabel(f"{disp_col} (mm)")
+ax.set_ylabel('Force (N)')
 ax.legend()
 
 # Remove top and right spines, emphasize left/bottom
