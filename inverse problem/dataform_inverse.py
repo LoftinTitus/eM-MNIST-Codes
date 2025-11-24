@@ -14,7 +14,6 @@ def normalize_inverse(sample):
     if max_force > 0:
         sample["force"] = sample["force"] / max_force
     
-    # Material mask remains as labels (0, 1, 2, etc.)
     return sample
 
 
@@ -67,8 +66,6 @@ def build_inverse_dataset(processed_samples):
 
 def extract_material_properties(sample):
     """Extract material properties from the sample"""
-    # This assumes you have material property information in your data
-    # Adjust based on your actual data structure
     
     properties = {}
     
@@ -84,8 +81,6 @@ def extract_material_properties(sample):
                 'density': 0.0
             }
         else:
-            # You'll need to define how to extract/assign material properties
-            # This is a placeholder - adjust based on your data
             properties[int(label)] = {
                 'young_modulus': 1.0,  # Normalized values
                 'poisson_ratio': 0.3,
